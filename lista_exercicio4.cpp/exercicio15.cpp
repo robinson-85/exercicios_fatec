@@ -26,9 +26,10 @@ das horas extras.
 
 O salário a receber do funcionário é igual ao salário líquido mais a gratificação.*/
 
+
 #include <stdio.h>
 int main(){
-    float sal_min, sal_mes, sal_bruto, horas_trab, dependente,valor_dependente, horas_extra, valor_hora_trab;
+    float sal_min, sal_mes, sal_bruto, sal_liquido, horas_trab, dependente,valor_dependente, horas_extra, valor_hora_trab;
     printf("\nDigite o valor do salario minimo: \n");
     scanf("%f", &sal_min);
     printf("\nDigite as horas trabalhadas: \n");
@@ -38,16 +39,36 @@ int main(){
     printf("Digite o numero de horas extras: \n");
     scanf("%f", &horas_extra);
 
-    valor_hora_trab = sal_min / (1/5);
+    valor_hora_trab = sal_min / 5;
     sal_mes = horas_trab * valor_hora_trab;
-    valor_dependente = dependente + 32; 
-    horas_extra = valor_hora_trab + 0.5;
-    sal_bruto = sal_mes + valor_dependente + horas_extra;
+    dependente = dependente * 32;
+    horas_extra = horas_extra * (valor_hora_trab + valor_hora_trab / 2);
+    sal_bruto = sal_mes + dependente + horas_extra;
+    sal_liquido = sal_bruto;
+
+if(sal_bruto >= 200 && sal_bruto<= 500){
+    sal_liquido = sal_bruto - (sal_bruto / 10);
+}
+
+else{
+    sal_liquido = sal_bruto - (sal_bruto / 5);
+}
 
 
+if(sal_liquido <= 350){
+    sal_liquido = sal_liquido + 100;
+}
 
+else{
+    sal_liquido = sal_liquido + 50; 
+}
 
+printf("\nO salario a receber sera: %.2f \n", sal_liquido);
+
+getchar();
+return 0;
 
 }
+
 
 

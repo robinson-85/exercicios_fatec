@@ -1,5 +1,8 @@
-// 14. Faça um programa que receba o ano de nascimento de uma pessoa e o ano atual, calcule e mostre:
+/* 14. Faça um programa que receba o ano de nascimento de uma pessoa e o ano atual, 
+calcule e mostre: */
+
 // a) a idade dessa pessoa;
+
 #include<stdio.h>
 int main(){
     float anoNascimento, anoAtual, resultado = 0;

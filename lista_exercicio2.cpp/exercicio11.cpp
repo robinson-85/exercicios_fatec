@@ -1,5 +1,6 @@
-// 11. Faça um programa que receba um número positivo e maior que zero, calcule e mostre:
-// a) o número digitado ao quadrado;
+/* 11. Faça um programa que receba um número positivo e maior que zero, calcule e mostre:
+a) o número digitado ao quadrado;*/
+
 #include <stdio.h>
 int main(){
     float num, resultado,num2;

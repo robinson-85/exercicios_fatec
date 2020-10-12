@@ -1,5 +1,8 @@
-// 16. Faça um programa que receba o número de horas trabalhadas e o valor do salário mínimo, calcule e mostre o salário a receber, seguindo estas regras:
+/* 16. Faça um programa que receba o número de horas trabalhadas e o valor do 
+salário mínimo, calcule e mostre o salário a receber, seguindo estas regras: */
+
 // a) a hora trabalhada vale a metade do salário mínimo.
+
 #include<stdio.h>
 int main(){
     float horaTrabalhada, salMinimo, salReceber;
@@ -15,7 +18,9 @@ int main(){
 
 }
 
-// b) o salário bruto equivale ao número de horas trabalhadas multiplicado pelo valor da hora trabalhada.
+/*b) o salário bruto equivale ao número de horas trabalhadas multiplicado pelo valor 
+da hora trabalhada. */
+
 #include<stdio.h>
 int main(){
     float salBruto, valor, horaTrabalhada, resultado;
@@ -30,6 +35,7 @@ int main(){
 }
 
 // c) o imposto equivale a 3% do salário bruto.
+
 #include<stdio.h>
 int main(){
     float salBruto, imposto;
@@ -43,6 +49,7 @@ int main(){
 }
 
 // d) o salário a receber equivale ao salário bruto menos o imposto.
+
 #include<stdio.h>
 int main(){
     float salBruto, imposto, salReceber;

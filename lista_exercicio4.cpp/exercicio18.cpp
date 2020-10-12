@@ -7,3 +7,32 @@ lados;
 ■ chama-se equilátero o triângulo que tem três lados iguais;
 ■ denomina-se isósceles o triângulo que tem o comprimento de dois lados iguais;
 ■ recebe o nome de escaleno o triângulo que tem os três lados diferentes. */
+
+#include <stdio.h>
+int main(){
+    float x, y, z;
+    printf("\nInforme x\n");
+    scanf("%f", &x);
+    printf("\nInforme y\n");
+    scanf("%f", &y);
+    printf("\nInforme z\n");
+    scanf("%f", &z);
+    if(x < y + z && y < z + x && z < x + y){
+       if(x == y && x == z){
+           printf("Equilatero\n");
+       }
+       else if(x == y || y == z || z == x){
+           printf("Isoceles\n");
+        }
+        else{
+            printf("Escaleno\n");
+        }
+    }
+    else{
+        printf("Esse nao e um triangulo\n");
+    }
+
+    getchar();
+    return 0;
+
+}
