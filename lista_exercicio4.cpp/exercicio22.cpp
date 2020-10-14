@@ -88,4 +88,4 @@ printf("\nDigite o salario final: %.2f \n", sal_liq);
 getchar ();
 return 0;
 
-}
+} // não resolvido

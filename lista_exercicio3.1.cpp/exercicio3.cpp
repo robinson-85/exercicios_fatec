@@ -7,18 +7,20 @@ int main(){
     scanf("%d", &n1);
     printf("\nDigite outro numero: \n");
     scanf("%d", &n2);
-    if(n1 > n2){
-        printf("\nO maior numero e: %d\n");
 
-    }
+    if (n1==n2){
+    printf("\nOs números são iguais \n");
+        if (n1 > n2){
+            printf("\n%d é o menor e %d o maior \n", n1, n2);
+        }
+
     else{
-        printf("\nO maior numero e: %d\n");
-    }
+        printf("\n%d é o menor e %d o maior \n", n2, n1);
+        }
 
-printf("\n\n\n_________Fim_________\n"); 
-getchar();
-return 0;
-        
+    getchar();
+    return 0;
+     }    
 }
 
 // não resolvido
