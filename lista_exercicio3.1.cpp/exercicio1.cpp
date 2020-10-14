@@ -18,3 +18,9 @@ Média Ponderada                                Conceito
 0,0------5                                        E
 
 */
+
+#include <stdio.h>
+int main(){
+    float n1, n2, n3, peso, media_pond, conceito;
+    printf("\n")
+}

@@ -30,6 +30,7 @@ int main(){
   }
   else
     puts("Opção inválida");
-
+  
+  getchar();
   return 0;
 }
