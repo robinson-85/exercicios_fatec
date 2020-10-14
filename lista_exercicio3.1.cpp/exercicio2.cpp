@@ -11,19 +11,35 @@ Média Ponderada                                Conceito
 
 #include <stdio.h>
 int main(){
-    float n1, n2, n3, media;
+    float n1, n2, n3, media_arit, media_pond;
     printf("\nDigite a nota do aluno: \n");
     scanf("%f", &n1);
     scanf("%f", &n2);
     scanf("%f", &n3);
-    media = (n1 + n2 + n3) / 3;
-    if(media >= 6) {
-        printf("\nAprovado \n");
+    media_arit = (n1 + n2 + n3) / 3;
+    media_pond = (n1 * 1) + (n2 * 2) + (n3 * 3);
+
+    if(media_arit < 6){
+        printf("\nExame \n");
     }
     else{
-        printf("\nReprovado \n");
+        printf("\nAprovado \n");
     }
+
+
+    if(media_pond > 0 && media_pond <= 3) {
+        printf("\nReprovado \n");
+        if(media_pond > 3 && media_pond <= 7){
+            printf("\nExame \n");
+            if(media_pond > 7 && media_pond <= 10){
+                printf("\nAprovado \n");
+            }
+                
+        }
+    }
+    
+    
 
 getchar ();
 return 0;
-}
+} // não resolvido
