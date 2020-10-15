@@ -2,6 +2,12 @@
 critério: o produto poderá ter seu preço aumentado ou diminuído. Para o preço ser
 alterado, o produto deve preencher pelo menos um dos requisitos a seguir:
 
-Falta a tabela
+VENDA MÉDIA MENSAL      PREÇO ATUAL    % DE AUMENTO    % DE DIMINUIÇÃO
+    <500                <R$ 30,00           10               ------
+    
+
+
+Faça um programa que receba o preço atual e a venda média mensal do produto,
+calcule e mostre o novo preço.
 
 */
