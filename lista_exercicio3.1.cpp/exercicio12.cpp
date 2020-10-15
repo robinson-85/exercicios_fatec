@@ -10,3 +10,12 @@ Código            Cargo                     Percentual
 5              Diretor                       Não tem aumento
   
 */
+
+#include <stdio.h>
+int main(){
+    float codigo_cargo, sal_atual, v_aumento, novo_sal;
+
+    getchar();
+    return 0;
+
+}
