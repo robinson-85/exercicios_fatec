@@ -8,7 +8,7 @@ Digite a opção desejada: */
 #include <stdio.h>
 int main(){
     int opcao, x, y;
-    float raiz_quadrada
+    float raiz_quadrada;
     printf("\n \n");
     scanf("%d"; &);
     printf("\n \n");
