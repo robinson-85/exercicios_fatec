@@ -36,9 +36,7 @@ int main(){
         printf("\nEsse nao e um Triangulo \n");
     }
     
-
-
-getchar();
-return 0;
+    getchar();
+    return 0;
 
 }

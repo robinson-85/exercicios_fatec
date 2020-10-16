@@ -3,13 +3,13 @@
 
 #include<stdio.h>
 int main(){
-    float sal,salnovo;
+    float sal,sal_novo;
     printf("Digite o salário do funcionario \n");
     scanf("%f",&sal);
 
-    salnovo= sal*1.25;
+    sal_novo= sal* 1.25;
 
-    printf("O salario novo e igual a %.2f", salnovo);
+    printf("O salario novo e igual a %.2f", sal_novo);
     getchar();
     return 0;
 }

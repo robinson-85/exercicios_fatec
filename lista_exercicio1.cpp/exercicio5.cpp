@@ -2,8 +2,8 @@
 de aumento, calcule e mostre o valor do aumento e o novo salário.*/
 
 #include <stdio.h>
-int main()
-{ float sal, perc, aumento, novosal;
+int main(){ 
+    float sal, perc, aumento, novosal;
 // Mostra mensagem antes da leitura do salário
 printf("\nDigite o salário do funcionário: ");
 // Recebe o salário
