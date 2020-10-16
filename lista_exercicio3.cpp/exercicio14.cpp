@@ -13,6 +13,13 @@ int main(){
     scanf("%f", &materia2);
     printf("\nDigite a terceira nota: \n");
     scanf("%f", &materia3);
+
+    if(resultado >= 7){
+        printf("\nAprovado \n");
+    }
+    else{
+        printf("\nReprovado \n");
+    }
    
     resultado = (materia1 + materia2 + materia3) / 3;
    

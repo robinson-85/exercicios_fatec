@@ -9,8 +9,11 @@ int main(){
     scanf("%f", &precoCusto);
     printf("Digite o valor do acrescimo: \n");
     scanf("%f", &acrescimo);
+
     precoVenda = precoCusto + acrescimo;
+
     printf("Preco de venda: %.2f \n", precoVenda);
+    
     getchar();
     return 0;
     

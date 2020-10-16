@@ -9,8 +9,11 @@ int main(){
     scanf("%f", &dolares);
     printf("Digite a cotacao: \n");
     scanf("%f", &cot);
+
     real =  dolares * cot;
+
     printf("Valor em reais: %.2f", (dolares*cot));
+    
     getchar();
     return 0;
 

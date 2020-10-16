@@ -7,10 +7,6 @@ F=(9*C+160) / 5, sendo F a temperatura em
 Fahrenheit e C a temperatura em Celsius.
 */
 
- /*  \t = tab
-    \n = pular um linha
-*/
-
 #include<stdio.h>
 int main ()
 {

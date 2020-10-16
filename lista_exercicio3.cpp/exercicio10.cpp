@@ -7,8 +7,11 @@ int main(){
     float valorProduto, prestacao, valorPrestacao = 5;
     printf("Valor do produto: \n");
     scanf("%f", &valorProduto);
+
     prestacao = valorProduto / valorPrestacao;
+
     printf("O valor da prestacao mensal e: %.2f \n", prestacao);
+    
     getchar();
     return 0;
     
