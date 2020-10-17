@@ -13,9 +13,13 @@ int main(){
         scanf("%d", &p1);
         scanf("%d", &p2);
         scanf("%d", &p3);
+        
         somar = (p1 + p2 + p3);
+        
         resultado = (n1 * p1) + (n2 * p2) + (n3 * p3) / somar;
+        
         printf("Se o resultado foi: %d", resultado);
+        
         getchar();
         return 0;
 

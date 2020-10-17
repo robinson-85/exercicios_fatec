@@ -9,10 +9,13 @@ int main (){
     scanf("%f", &vd);
     printf("Coloque o valor da taxa de juros: \n");
     scanf("%f", &vj);
+    
     vr = vd * (vj / 100);
     printf("Rendimento:%.2f \n", vr);
+    
     resultado = vd + vr;
     printf("Valor a receber:%.2f \n", resultado);
+    
     getchar();
     return 0;
 

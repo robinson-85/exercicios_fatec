@@ -7,7 +7,9 @@ int main (){
     scanf("%f", &base); 
     scanf("%f", &altura);
     area = (base * altura) / 2;
+    
     printf("Resposta: %.2f \n", area);
+    
     getchar();
     return 0;
 }

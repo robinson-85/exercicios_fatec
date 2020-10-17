@@ -7,9 +7,12 @@ int main (){
     float sal_base, sal_rec, grat = 50, imposto = 0.10, resultado; 
     printf("Digite o seu salario: \n");
     scanf("%f", &sal_base);
+    
     resultado = (sal_base + grat) - (sal_base * imposto);
     sal_rec = resultado;
+    
     printf("Salario a receber:%.2f \n", sal_rec);
+    
     getchar();
     return 0;
 

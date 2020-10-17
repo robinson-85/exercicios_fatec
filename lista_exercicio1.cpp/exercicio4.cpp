@@ -10,6 +10,7 @@ int main(){
     sal_novo= sal* 1.25;
 
     printf("O salario novo e igual a %.2f", sal_novo);
+    
     getchar();
     return 0;
 }
