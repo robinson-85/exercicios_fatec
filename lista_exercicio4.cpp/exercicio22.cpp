@@ -41,8 +41,11 @@ int main(){
         imposto = 0.03;
         if(sal_base > 450 && sal_base < 700){
             imposto = 0.08;
+        }
         if(sal_base >= 700) {
             imposto = 0.12;
+        }
+        
         else{
             printf("Isento");
             }
