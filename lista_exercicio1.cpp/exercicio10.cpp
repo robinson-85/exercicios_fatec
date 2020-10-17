@@ -2,17 +2,16 @@
  Área = π * R^2 */
 
 #include <stdio.h>
-int main()
-{ float area, raio;
-// Mostra mensagem antes da leitura do raio
-printf("\nDigite o raio: ");
-// Recebe o raio
-scanf("%f", &raio);
-// Calcula a área
-area = 3.1415 * raio * raio;
-// Mostra a área
-printf("\nA área é: %4.3f",area);
-// Para o programa a espera de um ENTER
-getchar();
-return 0;
+int main(){ 
+    float area, raio;
+    printf("\nDigite o raio: ");
+    scanf("%f", &raio);
+
+    area = 3.1415 * raio * raio;
+
+    printf("\nA área é: %4.3f",area);
+
+    getchar();
+    return 0;
+    
 }

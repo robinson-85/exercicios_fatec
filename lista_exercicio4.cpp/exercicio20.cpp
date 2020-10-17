@@ -32,28 +32,27 @@ int main(){
     if(codigoProduto >=1  && codigoProduto <=10){
         if(codigoOrigem >=1 && codigoOrigem <= 3){
             pesoProduto = pesoProduto * 1000;
-            
-            if(codigoProduto >= 1 && codigoProduto <=4){
-                precoTotal = pesoProduto * 10;
-            }
-            
-            if(codigoProduto >= 5 && codigoProduto <= 7){
-                precoTotal = pesoProduto * 25;
-            }
-            
-            if(codigoProduto >= 8 && codigoProduto <= 10){
-                precoTotal = pesoProduto * 35;
-            }
-            
-            if(codigoOrigem == 2){
-                valorImposto = precoTotal / 100 * 15; 
-            }
-            
-            if(codigoOrigem == 3){
-                valorImposto = precoTotal /100 * 25; 
-            }
         }
-
+            
+        if(codigoProduto >= 1 && codigoProduto <=4){
+            precoTotal = pesoProduto * 10;
+        }
+            
+        if(codigoProduto >= 5 && codigoProduto <= 7){
+            precoTotal = pesoProduto * 25;
+        }
+            
+        if(codigoProduto >= 8 && codigoProduto <= 10){
+            precoTotal = pesoProduto * 35;
+        }
+            
+        if(codigoOrigem == 2){
+            valorImposto = precoTotal / 100 * 15; 
+        }
+            
+        if(codigoOrigem == 3){
+            valorImposto = precoTotal /100 * 25; 
+        }
     }
 
     valorTotal = precoTotal + valorImposto;

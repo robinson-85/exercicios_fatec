@@ -36,3 +36,9 @@ int main(){
     scanf("%f", &sal_base);
     printf("\nDigite o seu tempo de servico: \n");
     scanf("%f", &tempo_servico);
+
+
+    getchar ();
+    return 0;
+    
+}

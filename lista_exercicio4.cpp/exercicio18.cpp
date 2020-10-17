@@ -17,17 +17,21 @@ int main(){
     scanf("%f", &y);
     printf("\nInforme z\n");
     scanf("%f", &z);
+    
     if(x < y + z && y < z + x && z < x + y){
        if(x == y && x == z){
            printf("Equilatero\n");
        }
+       
        else if(x == y || y == z || z == x){
            printf("Isoceles\n");
         }
+       
         else{
             printf("Escaleno\n");
         }
     }
+    
     else{
         printf("Esse nao e um triangulo\n");
     }
