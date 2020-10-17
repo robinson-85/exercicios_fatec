@@ -46,27 +46,27 @@ int main(){
     sal_bruto = sal_mes + dependente + horas_extra;
     sal_liquido = sal_bruto;
 
-if(sal_bruto >= 200 && sal_bruto<= 500){
-    sal_liquido = sal_bruto - (sal_bruto / 10);
-}
+    if(sal_bruto >= 200 && sal_bruto<= 500){
+        sal_liquido = sal_bruto - (sal_bruto / 10);
+    }
 
-else{
-    sal_liquido = sal_bruto - (sal_bruto / 5);
-}
+    else{
+        sal_liquido = sal_bruto - (sal_bruto / 5);
+    }
 
 
-if(sal_liquido <= 350){
-    sal_liquido = sal_liquido + 100;
-}
+    if(sal_liquido <= 350){
+        sal_liquido = sal_liquido + 100;
+    }
 
-else{
-    sal_liquido = sal_liquido + 50; 
-}
+    else{
+        sal_liquido = sal_liquido + 50; 
+    }
 
-printf("\nO salario a receber sera: %.2f \n", sal_liquido);
+    printf("\nO salario a receber sera: %.2f \n", sal_liquido);
 
-getchar();
-return 0;
+    getchar();
+    return 0;
 
 }
 

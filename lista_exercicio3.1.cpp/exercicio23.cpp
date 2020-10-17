@@ -41,3 +41,23 @@ Entre R$ 350,00 e R$ 600,00       Normal
 Maior que R$ 600,00             Bem remunerado
 
 */
+
+#include <stdio.h>
+int main(){
+    float sal_min, turno, categoria;
+    printf("\nDigite o valor do salario minimo: \n");
+    scanf("%f", &sal_min);
+    printf("\nDigite o turno de trabalho: \n");
+    scanf("%f", &turno);
+
+
+
+
+
+
+
+
+
+    getchar ();
+    return 0;
+}

@@ -22,21 +22,19 @@ int main(){
         printf("\nTriangulo \n");
         if(x == y || x == z){
             printf("\nTriangulo Equilatero \n");
-            else if(x == y || y == z || z == x){
-                printf("\nTriangulo Isoceles \n");
-                    else{
-                        printf("\nTriangulo Escaleno\n");
-                    }
-                   
-                }
-            }
+        }
+        else if(x == y || y == z || z == x){
+            printf("\nTriangulo Isoceles \n");
+        }
+        
+        else{
+            printf("\nTriangulo Escaleno\n");
         }
     }
-     else{
+        else{
         printf("\nEsse nao e um Triangulo \n");
     }
     
     getchar();
     return 0;
-
 }

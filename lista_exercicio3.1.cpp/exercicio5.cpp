@@ -10,6 +10,8 @@ int main(){
     scanf("%d", &n2);
     scanf("%d", &n3);
     scanf("%d", &n4);
-
+ 
+ getchar();
+ return 0;
 
 }

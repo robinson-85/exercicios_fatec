@@ -20,3 +20,19 @@ Calcule e mostre:
 ■ o valor do imposto, sabendo que o imposto é cobrado sobre o preço da carga do
 caminhão e depende do estado de origem;
 ■ o valor total transportado pelo caminhão, preço da carga mais imposto. */
+
+#include <stdio.h>
+int main(){
+        float cod_estado, peso, cod_carga, imposto, valor_imposto, valor_total;
+        printf("\nDigite o codigo do Estado de origem.\n");
+        scanf("%f", &cod_estado);
+
+
+
+
+
+
+
+        getchar();
+        return 0;
+}

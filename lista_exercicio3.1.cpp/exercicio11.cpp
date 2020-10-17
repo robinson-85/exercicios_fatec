@@ -5,5 +5,10 @@ duração do jogo (horas e minutos), sabendo que o tempo máximo de duração do
 
 #include <stdio.h>
 int main(){
-    float
+    float inicio_jogo, termino_jogo, hora, minuto; 
+
+
+
+    getchar ();
+    return 0;
 }

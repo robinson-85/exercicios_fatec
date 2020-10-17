@@ -11,25 +11,9 @@ Digite a opção desejada: */
 
 int main(){
   int opcao, x, y;
-  float raiz_quadrada;
 
-  puts("Menu de opções:");
-  puts("1 - Somar dois números");
-  puts("2 - Raiz quadrada de um número");
-  puts("Digite a opção desejada:");
-  scanf("%d", &opcao);
 
-  if (opcao == 1){
-    printf("Digite os dois números\n");
-    scanf("%d %d", &x, &y);
-    printf("A soma é %d\n", x + y);
-  } else if (opcao == 2){
-    printf("Digite o número\n");
-    scanf("%d", &x);
-    printf("A raiz quadrada é %.4f\n", sqrt(x));
-  }
-  else
-    puts("Opção inválida");
+  
   
   getchar();
   return 0;

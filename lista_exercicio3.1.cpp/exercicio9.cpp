@@ -3,5 +3,11 @@ DD/MM/AAAA – mês por extenso e hora:minuto. */
 
 #include <stdio.h>
 int main() {
+    int data, hora, mes;
+
+
+
+    getchar ();
+    return 0;
     
 }

@@ -11,5 +11,12 @@ Valor de I                 Forma de escrever
 */
 #include <stdio.h>
 int main(){
-    float 
+    float I, A, B, C;
+
+
+
+
+
+    getchar ();
+    return 0;
 }
