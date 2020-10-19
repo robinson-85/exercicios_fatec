@@ -1,1 +1,0 @@
-/* Fazer uma calculadora com as quatro operações. */
