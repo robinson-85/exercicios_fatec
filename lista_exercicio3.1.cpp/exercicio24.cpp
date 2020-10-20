@@ -41,6 +41,13 @@ Refrigeração: S
 Novo preço                      Classificação
 < = R$ 50,00                      Barato
 Entre R$ 50,00 e R$ 100,00        Normal
->= R$ 100,00                       Caro
+>= R$ 100,00                       Caro */
 
- */
+#include <stdio.h>
+int main(){
+    float preco, tipo, refrigeracao,
+
+
+    getchar();
+    return 0;
+}
