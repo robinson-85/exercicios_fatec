@@ -11,9 +11,12 @@ int main(){
     scanf("%f",&gato1);
     printf("Quantidade de racao que come o gato2: \n");
     scanf("%f",&gato2);
+
     consumoGatoDiario = gato1 + gato2;
     sacoRacao = sacoRacao - consumoGatoDiario * 5;
+
     printf("%.2f",sacoRacao);
+    
     getchar();
     return 0; 
 }

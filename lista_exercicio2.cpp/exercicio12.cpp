@@ -9,8 +9,11 @@ int main(){
     scanf("%d",&num1);
     printf("Digite um numero\n");
     scanf("%d", &num2);
+
     resultado = pow(num1, num2);
-    printf("%d",resultado);
+
+    printf("%d \n",resultado);
+
     getchar();
     return 0;
 }

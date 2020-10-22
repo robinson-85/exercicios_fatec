@@ -20,42 +20,32 @@ int main(){
     scanf("%f", &salario);
 
 
-    if(cargo == 1 ){
+    if(cargo == 1){
         printf("O cargo e Escriturario");
-        aumento = salario * 50 / 100;
-    }
-
-    printf("O valor do aumento e: %.2f \n", aumento);
-    novo_sal = salario + aumento;
-    printf(“O novo salario e: %.2f \n“, novo_sal);
-
-        
-
+        aumento = salario + 50 / 100;
         if(cargo == 2){
             printf("Secretario");
-            aumento = salario * 35 / 100;
-            }
-            if(cargo == 3){
-                printf("O cargo e Caixa");
-                aumento = salario * 20 / 100;
-            }
-            if(cargo == 4){
-                printf("O cargo e Gerente");
-                aumento = salario * 10 / 100;
-            }
-            if(cargo == 5){
-                printf("O cargo e Diretor");
-                
-            }
-        
+            aumento = salario + 35 / 100;
+        }
+        if(cargo == 3){
+            printf("O cargo e de Caixa");
+            aumento = salario + 20 / 100;
+        }
+        if(cargo == 4){
+            printf("O cargo e de Gerente");
+            aumento = salario + 10 / 100;
+        }
+        if(cargo == 5){
+            printf("O cargo e de Diretor");
+        }
+        else{
+            printf("Cargo inexistente");
+        }
     }
 
-    else{
-        printf("Cargo inexistente");
-    }
-
-    novo_sal = sal_atual + v_aumento;
-    printf("\nMostre o salario atual: %.2f\n", novo_sal);
+    novo_sal = salario + aumento;
+    
+    printf("O novo salario e: %.2f \n", novo_sal);
 
     getchar();
     return 0;

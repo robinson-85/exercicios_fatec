@@ -4,10 +4,12 @@
  do distribuidor e o percentual de impostos, calcule e mostre: */
 
 // a) o valor correspondente ao lucro do distribuidor;
+// b) o valor correspondente aos impostos;
+// c) o preço final do veículo.
 
 #include<stdio.h>
 int main(){
-    float precoFabrica, lucro, imposto;
+    float precoFabrica, lucro, imposto, resultado;
     printf("Preco de fabrica: \n");
     scanf("%f", &precoFabrica);
     printf("Percentual de lucro: \n");
@@ -18,7 +20,7 @@ int main(){
     return 0;
 }
 
-// b) o valor correspondente aos impostos;
+
 
 #include<stdio.h>
 int main(){
@@ -28,13 +30,13 @@ int main(){
     printf("Percentual de impostos: \n");
     scanf("%f", &imposto);
     resultado = precoFabrica / 100 * imposto;
-    printf("%.2f", resultado);
+    printf("%.2f", lucro, resultado);
     getchar();
     return 0;
 }
 
 
-// c) o preço final do veículo.
+
 
 #include<stdio.h>
 int main(){

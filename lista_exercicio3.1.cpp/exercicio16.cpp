@@ -11,28 +11,3 @@ VENDA MÉDIA MENSAL      PREÇO ATUAL         % DE AUMENTO    % DE DIMINUIÇÃO
 Faça um programa que receba o preço atual e a venda média mensal do produto,
 calcule e mostre o novo preço. */
 
-#include <stdio.h>
-int main(){
-    float venda_media, preco_atual, aumento, diminuicao, novo_preco;
-    printf("\nDigite o preco do produto \n");
-    scanf("%f", &preco_atual);
-
-    if(venda_media <500 && preco_atual <30){
-        aumento = 0.1;
-        if(venda_media >= 500 && venda_media < 1200 && preco_atual > 30 && preco_atual > 80){
-            aumento = 0.15;
-            if(venda_media >= 1200 && preco_atual >= 80){
-                diminuicao = 0.2;
-            }
-        }
-        
-    }
-
-    novo_preco = preco_atual + venda_media;
-
-    printf("\nMostre o novo preco do produto: %.2f\n", novo_preco);
-
-    getchar();
-    return 0;
-
-} // nao resolvido

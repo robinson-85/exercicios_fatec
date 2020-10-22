@@ -29,16 +29,3 @@ De R$ 600,00 para cima                      C
 
 */
 
-#include <stdio.h>
-int main(){
-    float sal_base, sal_liq, tempo_servico, imposto = 0, gratificacao, clas;
-    printf("\nDigite o salario base: \n");
-    scanf("%f", &sal_base);
-    printf("\nDigite o seu tempo de servico: \n");
-    scanf("%f", &tempo_servico);
-
-
-    getchar ();
-    return 0;
-    
-}

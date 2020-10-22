@@ -2,15 +2,5 @@
 fornecidas pelo usuário. Cada data deve ser composta por três valores inteiros, em
 que o primeiro representa o dia, o segundo, o mês e o terceiro, o ano.*/
 
-#include <stdio.h>
 
-
-int main()
-    int 
-{
-
-
-    getchar();
-    return 0;
-}
 

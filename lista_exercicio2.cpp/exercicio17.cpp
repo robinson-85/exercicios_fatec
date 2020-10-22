@@ -8,9 +8,12 @@ int main(){
     float salario, saldoAtual, cpmf = 0.38;
     printf("Coloque o valor do salario: \n");
     scanf("%f",&salario);
+
     cpmf = 2 * 0.38;
     saldoAtual = salario - salario / 100 * cpmf; 
+
     printf("%.2f", saldoAtual);
+    
     getchar();
     return 0;
 }

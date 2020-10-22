@@ -36,17 +36,3 @@ a tabela a seguir.
 Até R$ 700,00                                        Mal remunerado 
 Maiores que R$ 700,00                                Bem remunerado   */
 
-#include <stdio.h>
-int main(){
-    float imposto, sal, novo_sal, classificacao;
-    
-
-
-
-
-
-
-
-    getchar ();
-    return 0;
-}

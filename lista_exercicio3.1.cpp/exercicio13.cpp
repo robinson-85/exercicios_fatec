@@ -36,11 +36,3 @@ Até R$ 700,00                               Mal Remunerado
 Maiores que R$ 700,00                       Bem Remunerado
 
 */
-#include <stdio.h>
-int main(){
-    float imposto, novo_sal, classificacao;
-    puts("\nImposto \n")
-
-    getchar();
-    return 0;
-}

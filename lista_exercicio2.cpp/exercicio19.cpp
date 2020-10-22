@@ -10,8 +10,11 @@ int main(){
     scanf("%f",&degrau);
     printf("Quanto a pessoa quer subir? \n");
     scanf("%f",&pessoa);
+
     resultado = pessoa / degrau;
+
     printf("%.2f", resultado);
+    
     getchar();
     return 0;
 

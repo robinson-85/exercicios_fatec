@@ -27,19 +27,17 @@ int main(){
     }
 
 
-    if(media_pond > 0 && media_pond <= 3) {
-        printf("\nReprovado \n");
-        if(media_pond > 3 && media_pond <= 7){
-            printf("\nExame \n");
-            if(media_pond > 7 && media_pond <= 10){
-                printf("\nAprovado \n");
-            }
-                
+    if(media_pond > 3 && media_pond <= 7){
+        printf("\nExame \n");
+         if(media_pond > 7 && media_pond <= 10){
+             printf("\nAprovado \n");
+        }
+        else{
+             printf("\nReprovado \n");
         }
     }
-    
-    
 
 getchar ();
 return 0;
+
 } // não resolvido

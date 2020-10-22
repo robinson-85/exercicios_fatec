@@ -9,14 +9,3 @@ Valor de I                 Forma de escrever
     2                    A, B e C em ordem decrescente
     3                    O maior fica entre os outros dois números 
 */
-#include <stdio.h>
-int main(){
-    float I, A, B, C;
-
-
-
-
-
-    getchar ();
-    return 0;
-}

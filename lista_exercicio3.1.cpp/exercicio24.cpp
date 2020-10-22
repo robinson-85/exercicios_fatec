@@ -43,11 +43,4 @@ Novo preço                      Classificação
 Entre R$ 50,00 e R$ 100,00        Normal
 >= R$ 100,00                       Caro */
 
-#include <stdio.h>
-int main(){
-    float preco, tipo, refrigeracao,
 
-
-    getchar();
-    return 0;
-}

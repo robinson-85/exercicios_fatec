@@ -4,10 +4,4 @@ está a ponta da escada. Calcule e mostre a medida dessa escada. Observação:
 as funções trigonométricas implementadas nas linguagens de programação trabalham 
 com medidas de ângulos em radianos. */
 
-#include <stdio.h>
-#include<math.h>
 
-int main(){
-    float ang, alt, escada, radiano;
-    printf("Digite um angulo em graus")
-}

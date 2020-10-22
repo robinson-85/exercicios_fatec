@@ -10,7 +10,9 @@ convites que devem ser vendidos para que ,pelo menos, o custo do espetáculo sej
      scanf("%f", &custo);
      printf("Digite o valor do convite: ");
      scanf("%f", &convite);
+
      quantidade = custo/convite;
+     
      printf("\nA quantidade sera de: %.2f" " convites \n", quantidade);
 
      getchar();

@@ -17,10 +17,10 @@ int main(){
     else{
         printf("\n%d é o menor e %d o maior \n", n2, n1);
         }
+    }
 
     getchar();
-    return 0;
-     }    
+    return 0;    
 }
 
 // não resolvido

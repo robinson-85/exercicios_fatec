@@ -1,4 +1,4 @@
-/* 4. Faça um programa que receba três números e mostre-os em ordem crescente.
+/* 4.1. Faça um programa que receba três números e mostre-os em ordem crescente.
 Suponha que o usuário digitará três números diferentes. 
 
 Esse exercício corresponde ao exercício número 4, porém, realizado de outra forma */

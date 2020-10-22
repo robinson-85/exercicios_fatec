@@ -5,11 +5,11 @@
 int main(){
     float sal,sal_novo;
     printf("Digite o salário do funcionario \n");
-    scanf("%f",&sal);
+    scanf("%f",&sal); // input 
 
-    sal_novo= sal* 1.25;
+    sal_novo= sal* 1.25; // processing
 
-    printf("O salario novo e igual a %.2f", sal_novo);
+    printf("O salario novo e igual a %.2f", sal_novo); // output
     
     getchar();
     return 0;
