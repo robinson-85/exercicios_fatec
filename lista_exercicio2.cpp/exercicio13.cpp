@@ -5,39 +5,27 @@ mostre os resultados.*/
 // a) polegadas;
 #include<stdio.h>
 int main(){
-    float pol, pes, resultado;
+    float pol, pes, resultado, jardas, milhas = 1;
     printf("Informe o numero de pes\n");
     scanf("%f", &pes);
     pol = 12;
-    resultado = pes * pol;
-    printf("%.2f", "O numero de polegadas e: ", resultado);
-    getchar();
-    return 0;
+    pol = pes * pol;
+    printf("O numero de polegadas e: %.2f", pol);
 
-}
-
-// b) jardas;
-#include<stdio.h>
-int main(){
-    float jardas, pes;
-    printf("Informe o numero de pes\n");
+    printf("\nInforme o numero de pes\n");
     scanf("%f", &pes);
     jardas = pes * 3 ;
-    printf("%.2f", "O numero de jardas e: ", jardas);
-    getchar();
-    return 0;
+    printf("O numero de jardas e: %.2f \n", jardas);
 
-}
-
-// c) milhas.
-#include<stdio.h>
-int main(){
-    float jardas, milhas;
-    printf("Informe o numero de jardas\n");
+    printf("\nInforme o numero de jardas \n");
     scanf("%f", &jardas);
-    milhas = jardas / 1760;
-    printf("%.2f", "O numero de milhas e: ", milhas);
+    milhas = milhas * 1760;
+    printf("O numero de milhas e: %.2f\n", milhas);
+    
     getchar();
     return 0;
-
 }
+
+
+    
+

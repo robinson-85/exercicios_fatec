@@ -22,18 +22,18 @@ int main(){
 
     if(cargo == 1){
         printf("O cargo e Escriturario");
-        aumento = salario + 50 / 100;
+        aumento = salario + (50 / 100);
         if(cargo == 2){
             printf("Secretario");
-            aumento = salario + 35 / 100;
+            aumento = salario + (35 / 100);
         }
         if(cargo == 3){
             printf("O cargo e de Caixa");
-            aumento = salario + 20 / 100;
+            aumento = salario + (20 / 100);
         }
         if(cargo == 4){
             printf("O cargo e de Gerente");
-            aumento = salario + 10 / 100;
+            aumento = salario + (10 / 100);
         }
         if(cargo == 5){
             printf("O cargo e de Diretor");
