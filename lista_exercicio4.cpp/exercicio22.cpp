@@ -31,7 +31,7 @@ De R$ 600,00 para cima                      C
 
 #include <stdio.h>
 int main(){
-    float sal_base, tempo_de_servico, novo_sal, imposto;
+    float sal_base, tempo_de_servico, novo_sal, imposto, sal_liquido, gratificacao;
     printf("\nDigite o seu salario: \n");
     scanf("%f", &sal_base);
     printf("\nDigite o tempo de servico: \n");
@@ -50,12 +50,39 @@ int main(){
         }
     }
 
-  
+    if(sal_base > 500 && tempo_de_servico > 3){
+        novo_sal = sal_base + 20;
+        if(sal_base > 500 && tempo_de_servico < 3){
+            novo_sal = sal_base + 30;
+        }
+        if(sal_base < 500 && tempo_de_servico < 3){
+            novo_sal = sal_base + 23;
+        }
+        if(sal_base < 500 && tempo_de_servico > 3 && tempo_de_servico < 6){
+            novo_sal = sal_base + 35;
+        }
+        if(sal_base < 500 && tempo_de_servico > 6){
+            novo_sal = sal_base + 33;
+        }
+    }
+   
+    // O salário líquido, ou seja, salário base menos imposto mais gratificação.
 
-    
-    printf("\nEsse e o seu novo salario: %.2f \n", novo_sal);
+    sal_liquido = (sal_base - imposto) + gratificacao;
 
-getchar();
-return 0;
+    printf("\nEsse e o seu novo salario: %.2f \n", sal_liquido);
+
+    if(sal_liquido < 350){
+        printf("Classificacao A");
+        if(sal_liquido > 350 && sal_liquido < 600){
+             printf("Classificacao B");
+        }
+        if(sal_liquido >= 600){
+             printf("Classificacao C");
+        }
+    }
+	
+    getchar();
+    return 0;
 
 }
