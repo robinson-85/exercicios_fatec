@@ -9,13 +9,13 @@ int main(){
     scanf("%d", &n2);
 
     if (n1==n2){
-    printf("\nOs números são iguais \n");
-        if (n1 > n2){
-            printf("\n%d é o menor e %d o maior \n", n1, n2);
+        printf("\nOs números são iguais \n");
+        if (n1 < n2){
+            printf("\n%d é o menor e %d o maior \n");
         }
 
-    else{
-        printf("\n%d é o menor e %d o maior \n", n2, n1);
+        else{
+            printf("\n%d é o menor e %d o maior \n");
         }
     }
 

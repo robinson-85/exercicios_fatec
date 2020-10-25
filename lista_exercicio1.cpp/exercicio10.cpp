@@ -9,7 +9,7 @@ int main(){
 
     area = 3.1415 * raio * raio;
 
-    printf("\nA área é: %4.3f",area);
+    printf("\nA área é: %4.3f \n",area);
 
     getchar();
     return 0;
