@@ -31,57 +31,54 @@ De R$ 600,00 para cima                      C
 
 #include <stdio.h>
 int main(){
-    float sal_base, tempo_de_servico, novo_sal, imposto, sal_liquido, gratificacao;
+    float sal_base, tempo_de_servico, imposto, sal_liquido, gratificacao;
     printf("\nDigite o seu salario: \n");
     scanf("%f", &sal_base);
     printf("\nDigite o tempo de servico: \n");
     scanf("%f", &tempo_de_servico);
 
     if(sal_base < 200){ 
-	    printf("Isento");
-        if(sal_base >= 200 && sal_base <= 450){
-            novo_sal = sal_base - 3/100;
-        }
-        if(sal_base > 450 && sal_base < 700){
-            novo_sal= sal_base - 8/100;
-        }
-        if(sal_base >= 700){
-            novo_sal = sal_base - 12/100;
-        }
+	    imposto = 0;}
+    else if(sal_base >= 200 && sal_base <= 450){
+        imposto = sal_base * 0.03;
+    }
+    else if(sal_base > 450 && sal_base < 700){
+        imposto = sal_base * 0.08;
+    }
+    else{
+        imposto = sal_base * 0.12;
     }
 
-    if(sal_base > 500 && tempo_de_servico > 3){
-        novo_sal = sal_base + 20;
-        if(sal_base > 500 && tempo_de_servico < 3){
-            novo_sal = sal_base + 30;
-        }
-        if(sal_base < 500 && tempo_de_servico < 3){
-            novo_sal = sal_base + 23;
-        }
-        if(sal_base < 500 && tempo_de_servico > 3 && tempo_de_servico < 6){
-            novo_sal = sal_base + 35;
-        }
-        if(sal_base < 500 && tempo_de_servico > 6){
-            novo_sal = sal_base + 33;
-        }
+    if(sal_base > 500 && tempo_de_servico <= 3){
+        gratificacao = sal_base * 0.20;}
+    else if(sal_base > 500 && tempo_de_servico > 3){
+        gratificacao = sal_base * 0.30;
     }
-   
-    // O salário líquido, ou seja, salário base menos imposto mais gratificação.
+    if(sal_base < 500 && tempo_de_servico <= 3){
+        gratificacao = sal_base * 0.23;
+    }
+    if(sal_base <= 500 && tempo_de_servico >= 3 && tempo_de_servico <= 6){
+        gratificacao = sal_base * 0.35;
+    }
+    else{
+            gratificacao = sal_base * 0.33;
+    }
+    
+// ■ O salário líquido, ou seja, salário base menos imposto mais gratificação.
 
     sal_liquido = (sal_base - imposto) + gratificacao;
 
     printf("\nEsse e o seu novo salario: %.2f \n", sal_liquido);
 
-    if(sal_liquido < 350){
-        printf("Classificacao A");
-        if(sal_liquido > 350 && sal_liquido < 600){
-             printf("Classificacao B");
+    if(sal_liquido <= 350){
+        printf("\nClassificacao A\n");}
+    else if(sal_liquido > 350 && sal_liquido < 600){
+        printf("\nClassificacao B\n");
         }
-        if(sal_liquido >= 600){
-             printf("Classificacao C");
-        }
+    else{
+        printf("\nClassificacao C\n");
     }
-	
+
     getchar();
     return 0;
 
