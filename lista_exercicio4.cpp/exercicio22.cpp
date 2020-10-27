@@ -50,7 +50,8 @@ int main(){
     }
 
     if(sal_base > 500 && tempo_de_servico <= 3){
-        gratificacao = sal_base * 0.20;}
+        gratificacao = sal_base * 0.20;
+    }
     else if(sal_base > 500 && tempo_de_servico > 3){
         gratificacao = sal_base * 0.30;
     }

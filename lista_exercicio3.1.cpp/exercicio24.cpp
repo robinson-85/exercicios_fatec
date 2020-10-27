@@ -43,5 +43,89 @@ Novo preço                      Classificação
 Entre R$ 50,00 e R$ 100,00        Normal
 >= R$ 100,00                       Caro */
 
+#include <stdio.h>
+
+int main(){
+    int refrigeracao, tipo, A, L, V, N, S;
+    float preco, valor_adicional, novo_preco, imposto, preco_desconto, preco_de_custo  ;
+    printf("\nDeclare o preco: \n");
+    scanf("%f", &preco);
+
+    printf("\nDeclare o tipo: A - alimentacao, L - limpeza ou V - vestuario \n");
+    scanf("%d", &tipo);
+
+    printf("\nNecessita de refrigeracao? Sim (S) ou Nao (N): \n");
+    scanf("%d", &refrigeracao);
+
+    if (refrigeracao == N && tipo == A && preco < 15){
+	    valor_adicional = 2;
+    }
+    else if (refrigeracao == N && tipo == A && preco >= 15){
+	    valor_adicional = 5;
+    }
+    else if (refrigeracao == N && tipo == L && preco < 10){
+	    valor_adicional = 1.50;
+    }
+    else if (refrigeracao == N && tipo == L && preco >= 10){
+	    valor_adicional = 2.50;
+    }
+    else if (refrigeracao == N && tipo == V && preco < 30){
+	    valor_adicional = 3.00;
+    }
+    else if (refrigeracao == N && tipo == V && preco >= 30){
+	    valor_adicional = 2.50;
+    }
+    else if (refrigeracao == S && tipo == A){
+	    valor_adicional = 8.00;
+    }
+    else if (refrigeracao == S && tipo == L || tipo == V){ // ou
+	    valor_adicional = 0;
+    }
+    else{
+	    printf("\nOpcao Invalida \n");
+    }
+
+    if(preco < 25){ 
+	    imposto = 0.05;
+    }
+    else{
+	    imposto = 0.08;
+    }
+
+    preco_de_custo = preco + imposto; 
+
+
+    if(tipo == A && refrigeracao == S){
+	    preco_desconto = 0.03;
+    }
+    else{
+        printf("\nSem desconto \n");
+    }
+
+    novo_preco = preco_de_custo + valor_adicional - preco_desconto;
+
+    if(novo_preco <= 50){ 
+	    printf("\nBarato \n");
+    }
+    else if(novo_preco > 50 && novo_preco < 100){
+        printf("\nNormal \n");
+    }
+	else{
+        printf("\nCaro \n");
+    }
+
+    printf("\nO valor final sera: %.2f \n", novo_preco);
+
+
+    getchar();
+    return 0;
+
+}
+
+
+
+
+
+
 
 
