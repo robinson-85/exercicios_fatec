@@ -9,27 +9,27 @@ c) o preço final do veículo. */
 
 #include<stdio.h>
 int main(){
-    float precoFabrica, lucro, imposto, resultado;
-    printf("\nPreco de fabrica: \n");
+    float precoFabrica, lucro, imposto, preco_final;
+    
+    printf("\nDeclare o preco de fabrica: \n");
     scanf("%f", &precoFabrica);
-    printf("\nPercentual de lucro: \n");
+    printf("\nDeclare o percentual de lucro: \n");
     scanf("%f",&lucro);
 
     lucro =  precoFabrica / 100 * lucro;
 
-    printf("%.2f", lucro);
+    printf("\nO lucro do distribuidor e: %.2f \n", lucro);
     
-    printf("\nPercentual de impostos: \n");
+    printf("\nDeclare o valor do imposto: \n");
     scanf("%f", &imposto);
 
-    resultado = precoFabrica / 100 * imposto;
-
-    printf("%.2f", lucro, resultado);
-   
     imposto = precoFabrica / 100 * imposto;
-    resultado = precoFabrica + lucro + imposto;
 
-    printf("%.2f", resultado);
+    printf("\nO valor do imposto e: %.2f \n", imposto);
+   
+    preco_final = precoFabrica + lucro + imposto;
+
+    printf("\nO preco final do veiculo e: %.2f \n", preco_final);
 
     getchar();
     return 0;
