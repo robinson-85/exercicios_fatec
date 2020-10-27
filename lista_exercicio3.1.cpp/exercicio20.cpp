@@ -20,47 +20,56 @@ comprado e depende do país de origem;
 
 #include <stdio.h>
 int main(){
-    float codigoProduto, pesoProduto, codigoOrigem, precoTotal, valorImposto = 0, valorTotal;
-    printf("\nDigite o codigo do produto: \n");
-    scanf("%f", &codigoProduto);
-    printf("\nDigite o peso do produto em kg: \n");
-    scanf("%f", &pesoProduto);
-    printf("\nDigite o codigo do pais: \n");
-    scanf("%f", &codigoOrigem);
+    int cod_produto,cod_pais;
+    float peso,gramas,preco,imposto;
 
+    printf("Calculo de imposto e valor da cada grama \n\n");
 
-    if(codigoProduto >=1  && codigoProduto <=10){
-        if(codigoOrigem >=1 && codigoOrigem <= 3){
-            pesoProduto = pesoProduto * 1000;
-            
-            if(codigoProduto >= 1 && codigoProduto <=4){
-                precoTotal = pesoProduto * 10;
-            }
-            
-            if(codigoProduto >= 5 && codigoProduto <= 7){
-                precoTotal = pesoProduto * 25;
-            }
-            
-            if(codigoProduto >= 8 && codigoProduto <= 10){
-                precoTotal = pesoProduto * 35;
-            }
-            
-            if(codigoOrigem == 2){
-                valorImposto = precoTotal / 100 * 15; 
-            }
-            
-            if(codigoOrigem == 3){
-                valorImposto = precoTotal /100 * 25; 
-            }
-        }
+    printf("Digite o codigo do produto comprado (1 a 10): ");
+    scanf("%d",&cod_produto);
+    printf("Digite o peso do produto(em KG): ");
+    scanf("%f",&peso);
+    printf("Digite o codigo do país de origem (1 a 3): ");
+    scanf("%d",&cod_pais);
 
+    if ((cod_pais == 1) && (cod_produto>=1 && cod_produto<=4)) {
+        //Calculos
+            gramas = peso * 1000;
+            preco = gramas / 10;
+        //
+            printf("\n");
+            printf("O peso %.2f em gramas é %.2fg \n",peso,gramas);
+            printf("O preço toal do produto é R$ %.2f \n",preco);
+            printf("Não será cobrado impostos. \n\n");
     }
 
-    valorTotal = precoTotal + valorImposto;
+    else if ((cod_pais == 2) && (cod_produto>=5 && cod_produto<=7)) {
+        //Calculos
+            gramas = peso * 1000;
+            preco = gramas / 25;
+            imposto = preco * 0.15;
+        //
+            printf("\n");
+            printf("O peso %.2f em gramas é %.2 g \n",peso,gramas);
+            printf("O preço toal do produto é R$ %.2f \n",preco);
+            printf("Impostos: R$ %.2f \n\n");
+    }
 
-    printf("\nO valor total do produto e: %.2f \n", valorTotal);
+      else if ((cod_pais == 3) && (cod_produto>=8 && cod_produto<=10)) {
+        //Calculos
+            gramas = peso * 1000;
+            preco = gramas / 35;
+            imposto = preco * 0.25;
+        //
+            printf("\n");
+            printf("O peso %.2f em gramas é %.2f g \n",peso,gramas);
+            printf("O preço toal do produto é R$ %.2f \n",preco);
+            printf("Impostos: R$ %.2f \n\n");
+    }
 
-    getchar();
-    return 0;
+    else {
+        printf("\n\n");
+        printf("COMANDO INVÁLIDO.");
+    }
 
 }
