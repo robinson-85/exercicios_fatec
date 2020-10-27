@@ -32,7 +32,7 @@ int main(){
     printf("Digite o codigo do país de origem (1 a 3): ");
     scanf("%d",&cod_pais);
 
-    if ((cod_pais == 1) && (cod_produto>=1 && cod_produto<=4)) {
+    if (cod_pais == 1 && cod_produto>=1 && cod_produto<=4) {
         //Calculos
             gramas = peso * 1000;
             preco = gramas / 10;
@@ -43,7 +43,7 @@ int main(){
             printf("Não será cobrado impostos. \n\n");
     }
 
-    else if ((cod_pais == 2) && (cod_produto>=5 && cod_produto<=7)) {
+    else if (cod_pais == 2 && cod_produto>=5 && cod_produto<=7) {
         //Calculos
             gramas = peso * 1000;
             preco = gramas / 25;
@@ -55,7 +55,7 @@ int main(){
             printf("Impostos: R$ %.2f \n\n");
     }
 
-      else if ((cod_pais == 3) && (cod_produto>=8 && cod_produto<=10)) {
+      else if (cod_pais == 3 && cod_produto>=8 && cod_produto<=10) {
         //Calculos
             gramas = peso * 1000;
             preco = gramas / 35;
