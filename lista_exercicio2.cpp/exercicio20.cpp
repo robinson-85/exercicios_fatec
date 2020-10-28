@@ -4,4 +4,24 @@ está a ponta da escada. Calcule e mostre a medida dessa escada. Observação:
 as funções trigonométricas implementadas nas linguagens de programação trabalham 
 com medidas de ângulos em radianos. */
 
+#include <stdio.h>
+int main(){
+    float angulo,distancia,escada,radiano, altura;
 
+printf("CALCULO DA ALTURA DA PAREDE \n \n");
+
+printf("Digite a distancia: ");
+    scanf("%f",&distancia);
+printf("Digite o angulo em que a escada está apoiada: ");
+    scanf("%f",&angulo);
+
+// Calculos
+radiano = angulo* (3.14 / 180);
+escada = altura/radiano;
+
+printf("\nA altura da escada e de %.2f metros \n",radiano);
+
+getchar();
+return 0;
+
+}

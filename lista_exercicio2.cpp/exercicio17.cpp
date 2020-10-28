@@ -5,15 +5,15 @@
 
 #include<stdio.h>
 int main(){
-    float salario, saldoAtual, cpmf = 0.38;
+    float salario, saldoAtual, cpmf;
     printf("Coloque o valor do salario: \n");
     scanf("%f",&salario);
 
-    cpmf = 2 * 0.38;
-    saldoAtual = salario - salario / 100 * cpmf; 
+    cpmf = (salario * 0.38/100) * 2;
+    saldoAtual = salario - cpmf; 
 
-    printf("%.2f", saldoAtual);
+    printf("\nSeu saldo atual e: %.2f\n", saldoAtual);
     
     getchar();
     return 0;
-}
+} 

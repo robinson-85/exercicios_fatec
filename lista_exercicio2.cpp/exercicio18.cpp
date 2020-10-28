@@ -4,19 +4,27 @@ fornecida para cada gato é sempre a mesma. Faça um programa que receba o peso 
 saco de ração e a quantidade de ração fornecida para cada gato, calcule e mostre 
 quanto restará de ração no saco após cinco dias. */
 
-#include<stdio.h>
-int main(){
-    float gato1, gato2, racao, consumoGatoDiario, sacoRacao = 1000;
-    printf("Quantidade de racao que come o gato1: \n");
-    scanf("%f",&gato1);
-    printf("Quantidade de racao que come o gato2: \n");
-    scanf("%f",&gato2);
+#include <stdio.h>
+int main()
 
-    consumoGatoDiario = gato1 + gato2;
-    sacoRacao = sacoRacao - consumoGatoDiario * 5;
+{
+    float saco = 0,q_racao,quantidade,resto;
 
-    printf("%.2f",sacoRacao);
-    
-    getchar();
-    return 0; 
+    printf("Calculo de racao \n \n");
+
+    printf("Digite o peso do saco de racao em Kg: ");
+        scanf("%f",&saco);
+    printf("Digite a quantidade de ração em gramas: ");
+        scanf("%f",&q_racao);
+
+
+saco = saco * 1000;
+quantidade = (q_racao * 5);
+resto = quantidade - saco;
+
+printf("\n Apos 5 dias sobrara %.2f kg de racao \n \n",resto);
+
+getchar();
+return 0;
+
 }
