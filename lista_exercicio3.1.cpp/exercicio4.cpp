@@ -4,6 +4,7 @@ Suponha que o usuário digitará três números diferentes. */
 #include <stdio.h>
 int main(){
     int n1, n2, n3;
+    
     printf("\nDeclare três numeros: \n");
     scanf("%d%d%d", &n1, &n2, &n3);
     
@@ -26,9 +27,6 @@ int main(){
         printf("%d - %d - %d\n", n3, n1, n2);
     }
         
-    
-
-
     getchar();
     return 0;
 }

@@ -12,6 +12,7 @@ int main(){
 else {
     printf("\nÍmpar \n");
 }
+    
     getchar();
     return 0;
 }   
