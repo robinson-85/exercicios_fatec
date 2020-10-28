@@ -5,16 +5,18 @@ convites que devem ser vendidos para que ,pelo menos, o custo do espetáculo sej
 
  #include <stdio.h>
  int main(){
-     float custo, convite, quantidade;
-     printf("Digite o custo do espetaculo: ");
+     float custo, convite, quantidade, quantidade_arredondada;
+     printf("\nDigite o valor do custo do espetaculo teatral: \n");
      scanf("%f", &custo);
-     printf("Digite o valor do convite: ");
+     printf("\nDigite o valor do convite: \n");
      scanf("%f", &convite);
 
      quantidade = custo/convite;
      
-     printf("\nA quantidade sera de: %.2f" " convites \n", quantidade);
+     
+     printf("\nA quantidade sera de: %.2f convites \n", quantidade);
 
      getchar();
      return 0;
  }
+ 
