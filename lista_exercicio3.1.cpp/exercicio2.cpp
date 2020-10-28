@@ -11,33 +11,32 @@ Média Ponderada                                Conceito
 
 #include <stdio.h>
 int main(){
-    float n1, n2, n3, media_arit, media_pond;
+    float n1, n2, n3, media, exame;
     printf("\nDigite a nota do aluno: \n");
     scanf("%f", &n1);
     scanf("%f", &n2);
     scanf("%f", &n3);
-    media_arit = (n1 + n2 + n3) / 3;
-    media_pond = (n1 * 1) + (n2 * 2) + (n3 * 3);
+    printf("MÉDIA ARITMÉTICA \n");
+        printf("    >=0 e > 3 - Reprovado \n");
+        printf("    >=3 e > 7 - Exame \n");
+        printf("    >=7 e >= 10 - Aprovado \n\n");
+    
+    media = (n1 + n2 + n3) / 3;
 
-    if(media_arit < 6){
-        printf("\nExame \n");
+    if((media >=0 && media < 3)) {
+        printf("Sua média é %.2f,portanto está reprovado \n",media);
     }
-    else{
-        printf("\nAprovado \n");
+    else if((media >=3) && (media < 7)) {
+        exame = 6 - media;
+        printf("Sua média é %.2f,portanto está em exame \n",media);
+        printf("Falta %.2f pontos para você ser aprovado. \n\n",exame);
     }
-
-
-    if(media_pond > 3 && media_pond <= 7){
-        printf("\nExame \n");
-         if(media_pond > 7 && media_pond <= 10){
-             printf("\nAprovado \n");
-        }
-        else{
-             printf("\nReprovado \n");
-        }
+    else if ((media >= 7) && (media <= 10)) {
+        printf("Sua média é %.2f,portanto está aprovado \n",media);
     }
 
-getchar ();
-return 0;
 
-} // não resolvido
+    getchar ();
+    return 0;
+
+}
