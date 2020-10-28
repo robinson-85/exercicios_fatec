@@ -35,7 +35,11 @@ Salario                                     Classificação
 Até R$ 700,00                               Mal Remunerado
 Maiores que R$ 700,00                       Bem Remunerado */
 
-Imprima(“Escolha: 1 – Imposto, 2 - Novo salário ou 3 – Classificação.”)
+#include <stdio.h>
+#int main(){
+    int opcao1, opção2, opção3;
+    float imposto, novo_salario, classificação;
+    printf("Escolha: 1 – Imposto, 2 - Novo salário ou 3 – Classificação.”)
 Se opção1 == imposto
 	imprima(“Imposto)
 Se não se opção2 == novo_salario
@@ -66,8 +70,9 @@ Se não se salario <450
 	sal_novo = salario + 100; 
 // Opção 3
 
-Imprima(“Declare o seu salario:”)
+printf(“Declare o seu salario:”)
 Se salario <=700
-	Imprima(“Mal remunerado”)
+	printf("Mal remunerado”);
 se não
 	Imprima(“Bem remunerado”)
+}
