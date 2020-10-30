@@ -18,6 +18,9 @@ Calcule e mostre:
 comprado e depende do país de origem;
 ■ o valor total, preço total do produto mais imposto.*/
 
+
+//Refazer esse exercício.
+
 #include <stdio.h>
 int main(){
     float codigoProduto, pesoProduto, codigoOrigem, precoTotal, valorImposto = 0, valorTotal;

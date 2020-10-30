@@ -77,4 +77,7 @@ int main(){
     }
     printf("\n \n %d : %d \n \n",hr,min);
 
+    getchar();
+    return 0;
+
 }

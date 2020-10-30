@@ -5,16 +5,3 @@ Menu de opções:
 2. Raiz quadrada de um número.
 Digite a opção desejada: */
 
-#include <stdio.h>
-#include <math.h> //compilar com -lm
-
-
-int main(){
-  int opcao, x, y;
-
-
-  
-  
-  getchar();
-  return 0;
-}

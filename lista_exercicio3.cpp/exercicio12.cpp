@@ -14,7 +14,7 @@ int main(){
     valor_imposto = c_fabrica +(c_fabrica * p_impostos / 100) ;
     custo_consumidor = c_fabrica + valor_distribuidor + valor_imposto;
 
-    printf("O custo ao consumidor e: %.2f\n", custo_consumidor);
+    printf("O custo ao consumidor e: %.2f \n", custo_consumidor);
 
     getchar();
     return 0;

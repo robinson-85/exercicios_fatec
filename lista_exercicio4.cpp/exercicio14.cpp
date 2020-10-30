@@ -13,10 +13,10 @@ int main(){
 
     if (sal_inicial <= 500){
         bonificacao = sal_inicial + (5/100); 
+    }
         
-        if(sal_inicial > 500 && sal_inicial < 1200 ){
+    else if(sal_inicial > 500 && sal_inicial < 1200 ){
             bonificacao = sal_inicial + (12/100);
-        }
     }
     
     else{
@@ -27,12 +27,14 @@ int main(){
 
     if(sal_inicial < 600){
         auxilio_escola = sal_inicial + 150;
-        if(sal_inicial > 600){
-            auxilio_escola = sal_inicial + 100;
-        }
+    }
+    else if(sal_inicial > 600){
+        auxilio_escola = sal_inicial + 100;
     }
 
+
     sal_novo = sal_inicial + bonificacao + auxilio_escola;
+    
     printf("O seu salario total e: %.2f \n", sal_novo);
 
     getchar();

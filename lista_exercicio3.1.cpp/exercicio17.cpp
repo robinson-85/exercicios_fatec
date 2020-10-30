@@ -22,32 +22,28 @@ int main ()
     scanf("%f%*c",& b);
     printf("Digite valor para c \t");
     scanf("%f%*c",& c);
-    if(a==0)
-    {
+    if(a==0){
         printf("Não é equacao de 2 grau");
     }
-    else
-    {
+    else{
         delta= (b*b)-4 *a*c;
-        if(delta < 0 )
-        {
-            printf("não existe raiz real");
-        }
-        if(delta == 0)
-        {
+    }
+    if(delta < 0 ){
+        printf("não existe raiz real");
+    }
+    else if(delta == 0){
             printf("existe uma raiz real \n");
             x = (-b) / (2 * a);
             printf("%f",x);
-        }
-        if(delta > 0)
-        {
+    }
+    else if(delta > 0){
             printf("existem duas raízes reais \n");
             x1 = (-b + sqrt(delta))/ (2 * a);
             x2 = (-b - sqrt(delta))/ (2 * a);
             printf("%f \t",x1);
             printf("%f",x2);
-        }
     }
+    
     getchar();
     return 0;
 }

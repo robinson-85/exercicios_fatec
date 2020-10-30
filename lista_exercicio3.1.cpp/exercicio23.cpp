@@ -35,9 +35,7 @@ Coeficiente do salário: < = 25
 alimentação.
 ■ A classificação, de acordo com a tabela a seguir:
 
- Salário líquido                   Mensagem
-Menor que R$ 350,00             Mal remunerado 
-Entre R$ 350,00 e R$ 600,00       Normal
-Maior que R$ 600,00             Bem remunerado
-
-*/
+ Salário líquido                    Mensagem
+Menor que R$ 350,00               Mal remunerado 
+Entre R$ 350,00 e R$ 600,00         Normal
+Maior que R$ 600,00               Bem remunerado     */

@@ -36,3 +36,44 @@ a tabela a seguir.
 Até R$ 700,00                                        Mal remunerado 
 Maiores que R$ 700,00                                Bem remunerado   */
 
+#include <stdio.h>
+#int main(){
+    int opcao1, opção2, opção3;
+    float imposto, novo_salario, classificação;
+    printf("Escolha: 1 – Imposto, 2 - Novo salário ou 3 – Classificação.”)
+Se opção1 == imposto
+	imprima(“Imposto)
+Se não se opção2 == novo_salario
+	imprima(“Novo salario”)
+Se não se opção3 == classificação
+	imprima(Classificação”)
+
+// Se opção 1
+Imprima (“Digite o seu salario”)
+Leia salario
+Se salario < 500
+	imposto = salario – (5/100);
+Se não se salario >=500 && salario <850
+	imposto = salario –  (10/100); 
+se não
+	imposto = salario – (15/100);
+
+// Opção 2
+Imprima(“Declare o seu salario”)
+Leia salario
+Se salario >1500
+	sal_novo = salario + 25;
+Se não se salario>=750 && salario<=1500
+	sal_novo = salario + 50;
+Se não se salario>=450 && salario<750
+	sal_novo = salario + 75;
+Se não se salario <450
+	sal_novo = salario + 100; 
+// Opção 3
+
+printf(“Declare o seu salario:”)
+Se salario <=700
+	printf("Mal remunerado”);
+se não
+	Imprima(“Bem remunerado”)
+}

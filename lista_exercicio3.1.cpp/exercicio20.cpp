@@ -55,7 +55,7 @@ int main(){
             printf("Impostos: R$ %.2f \n\n");
     }
 
-      else if (cod_pais == 3 && cod_produto>=8 && cod_produto<=10) {
+    else if (cod_pais == 3 && cod_produto>=8 && cod_produto<=10) {
         //Calculos
             gramas = peso * 1000;
             preco = gramas / 35;

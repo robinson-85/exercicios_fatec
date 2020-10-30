@@ -13,9 +13,12 @@ int main(){
     scanf("%f", &salario);
     printf("Vendas do mes: \n");
     scanf("%f", &vendas);
+
     comissao = vendas * 0.15;
     salarioFinal = salario + comissao;
+
     printf("O salario final e: %.2f \n", salarioFinal);
+    
     getchar();
     return 0;
 

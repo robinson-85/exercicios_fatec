@@ -19,19 +19,18 @@ int main(){
     scanf("%f", &z);
     
     if(x < y + z && y < z + x && z < x + y){
-       if(x == y && x == z){
-           printf("Equilatero\n");
-       }
-       
-       else if(x == y || y == z || z == x){
-           printf("Isoceles\n");
-        }
-       
-        else{
-            printf("Escaleno\n");
-        }
+        printf("Esse e um triangulo\n");
     }
-    
+    else if(x == y && x == z){
+           printf("Equilatero\n");
+    }
+       
+    else if(x == y || y == z || z == x){
+        printf("Isoceles\n");
+    }
+    else if(x != y != z && y != z != x && z != x != y){
+            printf("Escaleno\n");
+    }
     else{
         printf("Esse nao e um triangulo\n");
     }

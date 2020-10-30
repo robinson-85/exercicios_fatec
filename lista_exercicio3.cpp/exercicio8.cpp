@@ -12,7 +12,7 @@ int main(){
 
     real =  dolares * cot;
 
-    printf("Valor em reais: %.2f", (dolares*cot));
+    printf("Valor em reais: %.2f \n", (dolares*cot));
     
     getchar();
     return 0;

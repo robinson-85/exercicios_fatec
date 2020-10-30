@@ -9,9 +9,9 @@ int main(){
     if(num%2==0){
         printf("\nPar \n");
     }
-else {
+    else {
     printf("\nÍmpar \n");
-}
+    }
     
     getchar();
     return 0;

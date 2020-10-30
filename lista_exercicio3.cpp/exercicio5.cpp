@@ -12,8 +12,11 @@ int main(){
     scanf("%f", &n1);
     scanf("%f", &n2);
     scanf("%f", &n3);
+
     resultado = (n1 + n2 + n3) / 3;
+
     printf("A media final e: %.2f \n", resultado); 
+    
     getchar();
     return 0;
 

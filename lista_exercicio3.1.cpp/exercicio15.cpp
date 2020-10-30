@@ -8,23 +8,27 @@ Superior a R$ 350,00                        R$ 50,00
 */
 
 #include <stdio.h>
+#include <locale>
+
 int main(){
+    setlocale( LC_ALL, "Portuguese");
     float sal_receber, sal_liquido, gratificacao;
-    printf("\nDigite o salario liquido: \n");
-    printf("%f", &sal_liquido);
+    printf("\nDigite o salário liquido: \n");
+    scanf("%f", &sal_liquido);
 
     sal_receber = sal_liquido + gratificacao;
     
-    if(sal_liquido >350){
+    if(sal_liquido <= 350){
         sal_receber = sal_liquido + 100;
     }
     else{
         sal_receber = sal_liquido + 50;
     }
     
-    printf("\nSeu salario a receber sera: %.2f\n", sal_receber);
+    printf("\nSeu salário a receber sera: %.2f\n", sal_receber);
+    
     getchar();
     return 0;
 }
 
-// não resolvido
+

@@ -8,14 +8,16 @@ Fahrenheit e C a temperatura em Celsius.
 */
 
 #include<stdio.h>
-int main ()
-{
+int main (){
     float celsius ,fahrenheit;
     printf("Digite temperatura em graus Celsius \t");
-    scanf("%f%*c",&celsius);
+    scanf("%f",&celsius);
     printf("\n" );
+
     fahrenheit = ((9*celsius+160)/5);
-    printf("A teperatura em  fahrenheit = %.2f",fahrenheit );
+
+    printf("A teperatura em  fahrenheit = %.2f \n",fahrenheit );
+
     getchar();
     return 0;
 }

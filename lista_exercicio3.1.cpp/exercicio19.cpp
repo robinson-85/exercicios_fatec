@@ -8,17 +8,3 @@ De 1.20 a 1.70         B                   E                          H
 Maiores que 1.70       C                   F                          I 
 */
 
-#include <stdio.h>
-int main(){
-    float altura, peso;
-    printf("\nDigite a altura \n");
-    scanf("%f", &altura);
-    printf("\nDigite o peso \n");
-    scanf("%f", &peso);
-
-    if(altura <1.20 && peso )
-
-
-    getchar ();
-    return 0;
-}
