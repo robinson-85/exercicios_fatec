@@ -37,43 +37,65 @@ Até R$ 700,00                                        Mal remunerado
 Maiores que R$ 700,00                                Bem remunerado   */
 
 #include <stdio.h>
-#int main(){
-    int opcao1, opção2, opção3;
-    float imposto, novo_salario, classificação;
-    printf("Escolha: 1 – Imposto, 2 - Novo salário ou 3 – Classificação.”)
-Se opção1 == imposto
-	imprima(“Imposto)
-Se não se opção2 == novo_salario
-	imprima(“Novo salario”)
-Se não se opção3 == classificação
-	imprima(Classificação”)
+int main(){
+    float salario, valor_imposto, resposta, novo_salario;
+    printf("Digite as opções: \n 1. Imposto \n 2. Novo salário \n 3. Classificação \n");
+    scanf("%f", &resposta);
+    
+    if(resposta == 1){
+        printf("Digite o seu salario: \n");
+        scanf("%f", &salario);
 
-// Se opção 1
-Imprima (“Digite o seu salario”)
-Leia salario
-Se salario < 500
-	imposto = salario – (5/100);
-Se não se salario >=500 && salario <850
-	imposto = salario –  (10/100); 
-se não
-	imposto = salario – (15/100);
+        if(salario <500){
+            valor_imposto = salario /100 * 5;
+        }
+        else if(salario>=500 && salario <=850){
+            valor_imposto = salario /100 * 10;
+        }
+        else{
+            valor_imposto = salario /100 * 15;
+        }
+        printf("O valor do imposto sera: %f\n", valor_imposto);
+    }
 
-// Opção 2
-Imprima(“Declare o seu salario”)
-Leia salario
-Se salario >1500
-	sal_novo = salario + 25;
-Se não se salario>=750 && salario<=1500
-	sal_novo = salario + 50;
-Se não se salario>=450 && salario<750
-	sal_novo = salario + 75;
-Se não se salario <450
-	sal_novo = salario + 100; 
-// Opção 3
+    if(resposta == 2){
+        printf("Digite o seu salario: \n");
+        scanf("%f", &salario);
 
-printf(“Declare o seu salario:”)
-Se salario <=700
-	printf("Mal remunerado”);
-se não
-	Imprima(“Bem remunerado”)
+        if(salario>1500){
+            novo_salario = salario + 25;
+        }
+        else if(salario>=750 && salario<=1500){
+            novo_salario = salario + 50;
+        }
+        else if(salario>=450 && salario<=750){
+            novo_salario = salario + 75;
+        }
+        else{
+            novo_salario = salario + 100;
+        }
+
+        printf("O valor do seu novo salario sera: %.2f \n", novo_salario);
+    }
+
+
+    if(resposta == 3){
+        printf("Digite o seu salario: \n");
+        scanf("%f", &salario);
+
+        if(salario>=700){
+            printf("A sua classificacao e: Mal remunerado. \n");
+        }
+        else{
+            printf("A sua classificacao e: Bem remunerado. \n");
+        } 
+    }
+
+
+    if(resposta == 4){
+        printf("Programa encerrado! \n");
+    }
+
+    getchar();
+    return 0;
 }
