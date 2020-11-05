@@ -5,9 +5,9 @@ e mostre um elevado ao outro.*/
 #include<math.h>
 int main(){
     int num1, num2, resultado;
-    printf("Digite um numero\n");
+    printf("Digite um numero: \n");
     scanf("%d",&num1);
-    printf("Digite um numero\n");
+    printf("Digite um numero: \n");
     scanf("%d", &num2);
 
     resultado = pow(num1, num2);

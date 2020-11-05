@@ -12,7 +12,7 @@ int main(){
     cpmf = (salario * 0.38/100) * 2;
     saldoAtual = salario - cpmf; 
 
-    printf("\nSeu saldo atual e: %.2f\n", saldoAtual);
+    printf("\nSeu saldo atual e: %.2f \n", saldoAtual);
     
     getchar();
     return 0;

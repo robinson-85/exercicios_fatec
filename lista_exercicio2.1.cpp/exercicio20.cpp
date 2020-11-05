@@ -19,10 +19,9 @@ comprado e depende do país de origem;
 ■ o valor total, preço total do produto mais imposto.*/
 
 #include <stdio.h>
-#include <locale.h> //Biblioteca locale é uitlizada para definar o idioma do programa.
+#include <locale.h> //Biblioteca locale é utilizada para definar o idioma do programa.
 
-int main()
-{
+int main(){
     setlocale(LC_ALL,"Portuguese"); //Comando utilizado para caracteres especiais aparecerem.
     int cod_produto,cod_pais;
     float peso,gramas,preco,imposto;
@@ -37,10 +36,9 @@ int main()
     scanf("%d",&cod_pais);
 
     if ((cod_pais == 1) && (cod_produto>=1 && cod_produto<=4)) {
-        //Calculos
             gramas = peso * 1000;
             preco = gramas / 10;
-        //
+        
             printf("\n");
             printf("O peso %.2f em gramas é %.2fg \n",peso,gramas);
             printf("O preço toal do produto é R$ %.2f \n",preco);
@@ -48,11 +46,10 @@ int main()
     }
 
     else if ((cod_pais == 2) && (cod_produto>=5 && cod_produto<=7)) {
-        //Calculos
             gramas = peso * 1000;
             preco = gramas / 25;
             imposto = preco * 0.15;
-        //
+    
             printf("\n");
             printf("O peso %.2f em gramas é %.2 g \n",peso,gramas);
             printf("O preço toal do produto é R$ %.2f \n",preco);
@@ -60,14 +57,13 @@ int main()
     }
 
       else if ((cod_pais == 3) && (cod_produto>=8 && cod_produto<=10)) {
-        //Calculos
             gramas = peso * 1000;
             preco = gramas / 35;
             imposto = preco * 0.25;
-        //
+        
             printf("\n");
-            printf("O peso %.2f em gramas é %.2 g \n",peso,gramas);
-            printf("O preço toal do produto é R$ %.2f \n",preco);
+            printf("O peso %.2f em gramas é %.2 g \n", peso, gramas);
+            printf("O preço toal do produto é R$ %.2f \n", preco);
             printf("Impostos: R$ %.2f \n\n");
     }
 

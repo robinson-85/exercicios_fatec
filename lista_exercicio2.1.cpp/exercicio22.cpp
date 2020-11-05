@@ -25,9 +25,7 @@ Até R$ 500,00                    De 6 anos para cima               33
 Salário líquido                          Classificação
 Até R$ 350,00                               A
 Entre R$ 350,00 e R$ 600,00                 B
-De R$ 600,00 para cima                      C 
-
-*/
+De R$ 600,00 para cima                      C                                        */
 
 #include <stdio.h>
 int main(){

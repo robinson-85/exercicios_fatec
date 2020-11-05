@@ -29,9 +29,8 @@ int main(){
     
     salReceber = salBruto - imposto;
 
-    printf("\nO salario a receber e: %.2f\n", salReceber);
+    printf("\nO salario a receber e: %.2f \n", salReceber);
     
     getchar();
     return 0;
-
 }

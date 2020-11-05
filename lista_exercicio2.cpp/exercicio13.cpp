@@ -8,27 +8,27 @@ mostre os resultados.
 
 #include<stdio.h>
 int main(){
-    float pol, pes, resultado, jardas, milhas = 1;
-    printf("Informe o numero de pes\n");
+    float polegadas, pes, resultado, jardas, milhas = 1;
+    printf("Informe o numero de pes: \n");
     scanf("%f", &pes);
-    pol = 12;
-    pol = pes * pol;
+    polegadas = 12;
+    polegadas = pes * polegadas;
 
-    printf("O numero de polegadas e: %.2f", pol);
+    printf("\nO numero de polegadas e: %.2f", polegadas);
 
-    printf("\nInforme o numero de pes\n");
+    printf("\nInforme o numero de pes: \n");
     scanf("%f", &pes);
 
     jardas = pes * 3 ;
 
     printf("O numero de jardas e: %.2f \n", jardas);
 
-    printf("\nInforme o numero de jardas \n");
+    printf("\nInforme o numero de jardas: \n");
     scanf("%f", &jardas);
 
     milhas = milhas * 1760;
     
-    printf("O numero de milhas e: %.2f\n", milhas);
+    printf("\nO numero de milhas e: %.2f\n", milhas);
     
     getchar();
     return 0;

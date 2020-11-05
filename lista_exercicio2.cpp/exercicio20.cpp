@@ -7,21 +7,17 @@ com medidas de ângulos em radianos. */
 #include <stdio.h>
 int main(){
     float angulo,distancia,escada,radiano, altura;
-
-printf("CALCULO DA ALTURA DA PAREDE \n \n");
-
-printf("Digite a distancia: ");
+    printf("CALCULO DA ALTURA DA PAREDE \n \n");
+    printf("Digite a distancia: \n");
     scanf("%f",&distancia);
-printf("Digite o angulo em que a escada está apoiada: ");
+    printf("Digite o angulo em que a escada está apoiada: \n");
     scanf("%f",&angulo);
 
-// Calculos
-radiano = angulo* (3.14 / 180);
-escada = altura/radiano;
+    radiano = angulo * (3.14 / 180);
+    escada = altura/radiano;
 
-printf("\nA altura da escada e de %.2f metros \n",radiano);
+    printf("\nA altura da escada e de %.2f metros \n", radiano);
 
-getchar();
-return 0;
-
+    getchar();
+    return 0;
 }
