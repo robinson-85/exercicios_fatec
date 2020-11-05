@@ -39,9 +39,9 @@ Maiores que R$ 700,00                                Bem remunerado   */
 #include <stdio.h>
 int main(){
     float salario, valor_imposto, resposta, novo_salario;
-    printf("Digite as opções: \n 1. Imposto \n 2. Novo salário \n 3. Classificação \n");
+    printf("Digite as opcoes: \n 1. Imposto \n 2. Novo salario \n 3. Classificacao \n");
     scanf("%f", &resposta);
-    
+
     if(resposta == 1){
         printf("Digite o seu salario: \n");
         scanf("%f", &salario);
@@ -55,7 +55,7 @@ int main(){
         else{
             valor_imposto = salario /100 * 15;
         }
-        printf("O valor do imposto sera: %f\n", valor_imposto);
+        printf("O valor do imposto sera: %.2f\n", valor_imposto);
     }
 
     if(resposta == 2){
@@ -83,17 +83,12 @@ int main(){
         printf("Digite o seu salario: \n");
         scanf("%f", &salario);
 
-        if(salario>=700){
+        if(salario<=700){
             printf("A sua classificacao e: Mal remunerado. \n");
         }
         else{
             printf("A sua classificacao e: Bem remunerado. \n");
         } 
-    }
-
-
-    if(resposta == 4){
-        printf("Programa encerrado! \n");
     }
 
     getchar();
