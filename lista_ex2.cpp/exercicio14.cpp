@@ -7,7 +7,7 @@ calcule e mostre: */
 #include <stdio.h>
 int main(){
     int ano_nascimento, ano_atual, idade, idade_2050, diferenca_2050;
-    printf("Digite o ano de nascimento? \n");
+    printf("Digite o ano do seu nascimento: \n");
     scanf("%d", &ano_nascimento);
     printf("Digite o ano atual: \n");
     scanf("%d", &ano_atual);

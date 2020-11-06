@@ -19,7 +19,7 @@ int main(){
     printf("\nInforme o numero de pes: \n");
     scanf("%f", &pes);
 
-    jardas = pes * 3 ;
+    jardas = pes * 3;
 
     printf("O numero de jardas e: %.2f \n", jardas);
 

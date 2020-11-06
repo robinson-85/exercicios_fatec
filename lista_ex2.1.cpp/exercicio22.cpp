@@ -71,17 +71,16 @@ int main(){
     printf("\nEsse e o seu novo salario: %.2f \n", sal_liquido);
 
     if(sal_liquido < 350){
-        printf("Classificacao A");
-        if(sal_liquido > 350 && sal_liquido < 600){
-             printf("Classificacao B");
-        }
-        if(sal_liquido >= 600){
-             printf("Classificacao C");
-        }
+        printf("Classificacao A \n");
     }
+    else if(sal_liquido > 350 && sal_liquido < 600){
+        printf("Classificacao B \n");
+    }
+    else{
+        printf("Classificacao C \n");
+        }
 	
     getchar();
     return 0;
-
 }
 

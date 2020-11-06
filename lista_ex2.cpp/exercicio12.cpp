@@ -4,13 +4,13 @@ e mostre um elevado ao outro.*/
 #include<stdio.h>
 #include<math.h>
 int main(){
-    int num1, num2, resultado;
+    int n1, n2, resultado;
     printf("Digite um numero: \n");
-    scanf("%d",&num1);
+    scanf("%d",&n1);
     printf("Digite um numero: \n");
-    scanf("%d", &num2);
+    scanf("%d", &n2);
 
-    resultado = pow(num1, num2);
+    resultado = pow(n1, n2);
 
     printf("%d \n",resultado);
 
