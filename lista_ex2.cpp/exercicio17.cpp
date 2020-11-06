@@ -4,6 +4,7 @@
  inicial da conta está zerado.*/
 
 #include<stdio.h>
+
 int main(){
     float salario, saldoAtual, cpmf;
     printf("Coloque o valor do salario: \n");

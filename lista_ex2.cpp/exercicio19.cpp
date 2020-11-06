@@ -4,9 +4,10 @@ e mostre quantos degraus ele deverá subir para atingir seu objetivo, sem se
 preocupar com a altura do usuário. Todas as medidas fornecidas devem estar em metros. */
 
 #include<stdio.h>
+
 int main(){
     float degrau, escada, pessoa, resultado;
-    printf("Qual a medida do degrau?: \n");
+    printf("Qual a medida do degrau? \n");
     scanf("%f",&degrau);
     printf("Quanto a pessoa quer subir? \n");
     scanf("%f",&pessoa);
@@ -17,5 +18,4 @@ int main(){
     
     getchar();
     return 0;
-
 }

@@ -5,6 +5,7 @@ saco de ração e a quantidade de ração fornecida para cada gato, calcule e mo
 quanto restará de ração no saco após cinco dias. */
 
 #include <stdio.h>
+
 int main(){
     float saco = 0,q_racao,quantidade,resto;
     printf("Calculo de racao \n \n");

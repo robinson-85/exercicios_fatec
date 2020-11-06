@@ -7,6 +7,7 @@ mostre os resultados.
  c) jardas; */
 
 #include<stdio.h>
+
 int main(){
     float polegadas, pes, resultado, jardas, milhas = 1;
     printf("Informe o numero de pes: \n");

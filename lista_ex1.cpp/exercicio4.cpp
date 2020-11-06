@@ -2,6 +2,7 @@
  e mostre o novo salário, sabendo-se que este sofreu um aumento de 25%.*/
 
 #include<stdio.h>
+
 int main(){
     float sal,sal_novo;
     printf("Digite o salário do funcionario \n");

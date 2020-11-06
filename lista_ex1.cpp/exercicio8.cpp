@@ -4,16 +4,16 @@ do rendimento.*/
 
 #include <stdio.h>
 int main (){
-    float vd, vj, vr, resultado;
+    float valor_deposito, valor_juros, valor_rendimento, resultado;
     printf("Escreva o valor do depósito: \n");
-    scanf("%f", &vd);
+    scanf("%f", &valor_deposito);
     printf("Coloque o valor da taxa de juros: \n");
-    scanf("%f", &vj);
+    scanf("%f", &valor_juros);
     
-    vr = vd * (vj / 100);
-    printf("Rendimento:%.2f \n", vr);
+    valor_rendimento = valor_deposito * (valor_juros / 100);
+    printf("Rendimento:%.2f \n", valor_rendimento);
     
-    resultado = vd + vr;
+    resultado = valor_deposito + valor_rendimento;
     printf("Valor a receber:%.2f \n", resultado);
     
     getchar();

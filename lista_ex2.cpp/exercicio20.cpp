@@ -5,6 +5,7 @@ as funções trigonométricas implementadas nas linguagens de programação trab
 com medidas de ângulos em radianos. */
 
 #include <stdio.h>
+
 int main(){
     float angulo,distancia,escada,radiano, altura;
     printf("CALCULO DA ALTURA DA PAREDE \n \n");

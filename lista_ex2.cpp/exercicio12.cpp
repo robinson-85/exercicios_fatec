@@ -3,6 +3,7 @@ e mostre um elevado ao outro.*/
 
 #include<stdio.h>
 #include<math.h>
+
 int main(){
     int n1, n2, resultado;
     printf("Digite um numero: \n");

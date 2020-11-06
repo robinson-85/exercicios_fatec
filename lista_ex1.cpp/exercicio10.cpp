@@ -2,6 +2,7 @@
  Área = π * R^2 */
 
 #include <stdio.h>
+
 int main(){ 
     float area, raio;
     printf("\nDigite o raio: ");
@@ -13,5 +14,4 @@ int main(){
 
     getchar();
     return 0;
-    
 }
