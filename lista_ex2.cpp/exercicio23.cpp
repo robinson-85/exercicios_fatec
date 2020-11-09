@@ -7,7 +7,7 @@ c) o arredondamento desse número. */
 #include <math.h>
 int main(){
     float numero,inteira,fracao,arred;
-    printf("Digite um numero real: ");
+    printf("Digite um numero real: \n");
     scanf("%f",&numero);
 
  	printf("Parte Inteira : %d \n",(int) numero);
