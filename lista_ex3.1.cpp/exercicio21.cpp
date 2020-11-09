@@ -23,9 +23,11 @@ caminhão e depende do estado de origem;
 
 #include <stdio.h>
 int main(){
-        float cod_estado, peso, cod_carga, imposto, valor_imposto, valor_total;
-        printf("\nDigite o codigo do Estado de origem.\n");
+        float cod_estado,resposta, peso, cod_carga, imposto, valor_imposto, valor_total;
+        printf("\nDigite o codigo do Estado de origem:\n1 \n2 \n3 \n4 \n5 \n");
         scanf("%f", &cod_estado);
+        
+
 
 
 
