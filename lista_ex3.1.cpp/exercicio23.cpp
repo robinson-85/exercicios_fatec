@@ -50,20 +50,20 @@ int main(){
     scanf("%f", &sal_minimo);
     printf("Declare seu turno de trabalho: \nM — matutino, \nV — vespertino, \nN — noturno \n");
     scanf("%s", &turno_trabalho);
-    printf("Declare a sua categoria: \nO — operario; \nG — gerente \n");
+    printf("Declare a sua categoria: O — operario ou G — gerente \n");
     scanf("%s", &categoria);
-    scanf("%s", &O);
-    scanf("%s", &G);
+   
     printf("Declare o numero de horas trabalhadas durante o mes: \n");
     scanf("%f", &horas_trabalhadas);
+    printf("\n \n");
 
     // coeficiente do salário e sobre o turno.
    
     if(turno_trabalho == M){
-	    coeficiente_sal = sal_minimo + (10/100);
+	    coeficiente_sal = sal_minimo * 0.10;
     }
     else if(turno_trabalho == V){
-	    coeficiente_sal = sal_minimo + (15/100);
+	    coeficiente_sal = sal_minimo * 0.15;
     }
     else if(turno_trabalho == N){
 	    coeficiente_sal = sal_minimo + (12/100);
@@ -134,3 +134,9 @@ int main(){
     getchar();
     return 0;
 }
+
+
+/*ValorAumento= Salario*0.12; //VALOR DO AUMENTO
+    NovoSalario= Salario*1.12;  //VALOR NOVO SALARIO
+    printf("\nValor do Aumento em 12 Porcento: \n%f",ValorAumento);
+    printf("\nValor do Novo Salario: \n%.3f",NovoSalario);*/
