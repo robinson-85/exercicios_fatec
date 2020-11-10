@@ -14,26 +14,34 @@ calcule e mostre o novo preço. */
 #include <stdio.h>
 
 int main(){
-    float venda_media, preco_atual, novo_preco;
+    float venda_media, preco_atual, novo_preco, diminuicao;
     printf("Declare a venda media mensal: \n");
     scanf("%f", &venda_media);
     printf("Declare o preco atual do produto: \n");
     scanf("%f", &preco_atual);
 
-    if(venda_media<500 && preco_atual<30)
-    {
-        novo_preco = preco_atual + (10/100);
+    if(venda_media<500 || preco_atual<30)
+    {   
+        printf("Será aumentado 10%% no preço atual. \n");
+        novo_preco = preco_atual * 1.10;
+        printf("O preço reajustado será de %.2f reais", preco_atual);
+        printf("\n\n");
     }
-    else if((venda_media>=500 && venda_media<1200) && (preco_atual<30 && preco_atual>80))
+    else if((venda_media>=500 && venda_media<1200) || (preco_atual<30 && preco_atual>80))
     {
-        novo_preco = preco_atual + (15/100);
+        printf("Será aumentado 15%% no preço atual. \n");
+        preco_atual = preco_atual * 1.15;
+        printf("O preço reajustado será de %.2f reais",preco_atual);
+        printf("\n\n");
     }
     else{
-        novo_preco = preco_atual - (20/100);
+        printf("Será diminuido em 20%% no preço atual. \n");
+        diminuicao = preco_atual * 0.2;
+        preco_atual = preco_atual - diminuicao;
+        printf("O preço reajustado será de %.2f reais",preco_atual);
+        printf("\n\n");
     }
     
-    printf("O novo preco sera: %.2f \n", novo_preco);
-
     getchar();
     return 0;
 }

@@ -39,4 +39,7 @@ int main()
         printf(" ordem decresente dos n�meros �: %d,%d,%d,%d.",n4,n3,n2,n1);
     }
 
+    getchar();
+    return 0;
+
 }
