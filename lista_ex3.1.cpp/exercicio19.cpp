@@ -10,13 +10,44 @@ Maiores que 1.70       C                   F                          I         
 #include <stdio.h>
 
 int main(){
-    float peso, altura, classificacao;
-    printf("Digite o seu peso: \n");
-    scanf("%f", &peso);
-    printf("Digite a sua altura: \n");
+    float peso, altura;
+    printf("Digite a sua altura (em m): \n");
     scanf("%f", &altura);
+    printf("Digite o peso (em kg): \n");
+    scanf("%f", &peso);
+    // 1° classificação.
 
-    if(altura>1.20)
+    if(altura<1.20){
+        if(peso<=60){
+            printf("Classificacao: A \n");
+        }
+        else if(peso<=90){
+            printf("Classificacao: B \n");
+        }
+        else{
+            printf("Classificacao: C \n");
+        }
+    }else if(altura<=1.70){
+        if(peso<=60){
+            printf("Classificacao: D \n");
+        }
+        else if(peso<=90){
+            printf("Classificacao: E \n");
+        }
+        else {
+            printf("Classificacao: F \n");
+        }
+    }else{
+        if(peso <= 60){
+            printf("Classificacao: G \n");
+        }
+        else if(peso <= 90){
+            printf("Classificacao: H \n");
+        }
+        else{
+            printf("Classificacao: I \n");
+        }
+    }
 
 
 

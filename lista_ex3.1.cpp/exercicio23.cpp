@@ -44,15 +44,16 @@ Maior que R$ 600,00               Bem remunerado     */
  
 
 int main(){
-    float sal_minimo, M, V, N, O, G, turno_trabalho, categoria, horas_trabalhadas, coeficiente_sal, sal_bruto, imposto, gratificacao, auxilio_alimentacao, sal_liquido;
+    char turno_trabalho, categoria, M, V, N, O, G;
+    float sal_minimo, horas_trabalhadas, coeficiente_sal, sal_bruto, imposto, gratificacao, auxilio_alimentacao, sal_liquido;
     printf("Digite o valor do salario minimo: \n");
     scanf("%f", &sal_minimo);
     printf("Declare seu turno de trabalho: \nM — matutino, \nV — vespertino, \nN — noturno \n");
-    scanf("%f", &turno_trabalho);
+    scanf("%s", &turno_trabalho);
     printf("Declare a sua categoria: \nO — operario; \nG — gerente \n");
-    scanf("%f", &categoria);
-    scanf("%f", &O);
-    scanf("%f", &G);
+    scanf("%s", &categoria);
+    scanf("%s", &O);
+    scanf("%s", &G);
     printf("Declare o numero de horas trabalhadas durante o mes: \n");
     scanf("%f", &horas_trabalhadas);
 
