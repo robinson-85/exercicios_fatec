@@ -7,12 +7,11 @@ número inteiro entre 10 e 40.
 Tabelas: 
 
 Código do Estado         Imposto         Código da Carga      Preço por quilo
-        1                   35%             10 a 20%                100
-        2                   25%             21 a 30%                250
-        3                   15%             31 a 40%                340
+        1                   35%             10 a 20               100
+        2                   25%             21 a 30               250
+        3                   15%             31 a 40               340
         4                    5%             
         5                 Isento
-
 
 Calcule e mostre:
 ■ o peso da carga do caminhão convertido em quilos;
@@ -23,15 +22,16 @@ caminhão e depende do estado de origem;
 
 #include <stdio.h>
 int main(){
-        float cod_estado,resposta, peso, cod_carga, imposto, valor_imposto, valor_total;
+        float cod_estado,resposta, peso, preco_carga, cod_carga, imposto, valor_imposto, valor_total;
         printf("\nDigite o codigo do Estado de origem:\n1 \n2 \n3 \n4 \n5 \n");
         scanf("%f", &cod_estado);
-        
-
-
-
-
-
+        printf("\nDigite o peso da carga em toneladas: \n");
+        scanf("%f", &peso);
+        printf("\nDigite o codigo da carga com um numero inteiro entre 10 a 40: \n");
+        scanf("%f",&cod_carga);
+        peso = peso * 1000;
+        printf("\nO peso da carga convertido em kg e: %.2f\n", peso);
+        preco_carga =  
 
 
 
