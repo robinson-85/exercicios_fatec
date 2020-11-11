@@ -38,9 +38,9 @@ int main(){
             preco = gramas / 10;
         //
             printf("\n");
-            printf("O peso %.2f em gramas é %.2fg \n",peso,gramas);
-            printf("O preço toal do produto é R$ %.2f \n",preco);
-            printf("Não será cobrado impostos. \n\n");
+            printf("O peso %.2f em gramas é %.2fg \n", peso,gramas);
+            printf("O preço total do produto é: R$ %.2f \n", preco);
+            printf("Não sera cobrado impostos. \n\n");
     }
 
     else if (cod_pais == 2 && cod_produto>=5 && cod_produto<=7) {
@@ -50,8 +50,8 @@ int main(){
             imposto = preco * 0.15;
         //
             printf("\n");
-            printf("O peso %.2f em gramas é %.2 g \n",peso,gramas);
-            printf("O preço toal do produto é R$ %.2f \n",preco);
+            printf("O peso %.2f em gramas é %.2 g \n", peso, gramas);
+            printf("O preço total do produto é: R$ %.2f \n", preco);
             printf("Impostos: R$ %.2f \n\n");
     }
 
@@ -62,14 +62,14 @@ int main(){
             imposto = preco * 0.25;
         //
             printf("\n");
-            printf("O peso %.2f em gramas é %.2f g \n",peso,gramas);
-            printf("O preço toal do produto é R$ %.2f \n",preco);
+            printf("O peso %.2f em gramas é %.2f g \n", peso, gramas);
+            printf("O preço toal do produto e: R$ %.2f \n", preco);
             printf("Impostos: R$ %.2f \n\n");
     }
 
     else {
         printf("\n\n");
-        printf("COMANDO INVÁLIDO.");
+        printf("Comando invalido \n");
     }
 
     getchar();

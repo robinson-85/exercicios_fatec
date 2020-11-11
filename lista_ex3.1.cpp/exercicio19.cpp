@@ -15,7 +15,6 @@ int main(){
     scanf("%f", &altura);
     printf("Digite o peso (em kg): \n");
     scanf("%f", &peso);
-    // 1° classificação.
 
     if(altura<1.20){
         if(peso<=60){
@@ -48,8 +47,6 @@ int main(){
             printf("Classificacao: I \n");
         }
     }
-
-
 
     getchar();
     return 0;
