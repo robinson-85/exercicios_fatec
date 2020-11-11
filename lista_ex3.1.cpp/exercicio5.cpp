@@ -8,28 +8,36 @@ em ordem decrescente. Suponha que o usuário digitará quatro números diferente
 int main()
 {
     setlocale(LC_ALL,"portuguese"); 
-    int num1, num2, num3, num4;
-    printf("Digite o primeiro número em ordem crescente: \n");
-    scanf("%d",&num1);
-    scanf("%d",&num2);
-    scanf("%d",&num3);
-    printf("Digite um número (fora de ordem): \n");
-    scanf("%d",&num4);
+    int n1,n2,n3,n4;
 
-    if(num4 > num3){
-        printf("A ordem decrescente é: %d\n", num4, "-%d", num3, "-%d", num2, "-%d", num1);
-    }
-    else if(num4 > num2 && num4 < num3){
-        printf("A ordem decrescente é: %d \n", num3, "-%d", num4, "-%d", num2, "-%d", num1);
-    }
-	else if(num4 > num1 && num4 < num2){
-        printf("A ordem decrescente é: %d \n", num3, "-%d", num2, "-%d", num4, "-%d", num1);
-    }
-    else if(num4 < num1){
-        printf("A ordem decrescente é: %d \n", num3, "-%d", num2, "-%d", num1, "-%d", num4);
-    }
+    printf("Números em ordem decresente \n \n");
+    printf("Digite três números em ordem crescente. \n");
 
-    
+    printf("Digite um número: ");
+        scanf("%d",&n1); // Menor numero
+    printf("Digite um n�mero: ");
+        scanf("%d",&n2);
+    printf("Digite um número: ");
+        scanf("%d",&n3); //Maior numero
+
+    printf(" \n");
+    printf("Digite um número fora da ordem: ");
+        scanf("%d",&n4);
+    printf("\n\n");
+
+    //Condi�oes
+    if ( n4 > n3){
+        printf("A ordem decresente dos números é: %d,%d,%d,%d. \n",n4,n3,n2,n1);
+    }
+    else if  (n4 > n2){
+        printf("A ordem decresente dos números é: %d,%d,%d,%d. \n",n3,n2,n4,n1);
+    }
+    else if  (n4 > n1){
+        printf("A ordem decresente dos números é: %d,%d,%d,%d. \n",n3,n4,n2,n1);
+    }
+     else if  (n4 < n1){
+        printf("A ordem decresente dos números é: %d,%d,%d,%d. \n",n4,n3,n2,n1);
+    }
 
     getchar();
     return 0;
