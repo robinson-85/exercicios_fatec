@@ -8,6 +8,7 @@ Fahrenheit e C a temperatura em Celsius.
 */
 
 #include<stdio.h>
+
 int main (){
     float celsius ,fahrenheit;
     printf("Digite temperatura em graus Celsius \t");

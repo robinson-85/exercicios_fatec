@@ -115,10 +115,8 @@ int main(){
 
     printf("\nO valor final sera: %.2f \n", novo_preco);
 
-
     getchar();
     return 0;
-
 }
 
 

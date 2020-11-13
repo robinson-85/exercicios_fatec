@@ -4,6 +4,7 @@ vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar o seu nome
 o salário fixo e salário no final do mês.*/
 
 #include <stdio.h>
+
 int main(){
     char nome[61];
     float salario, vendas, comissao, salarioFinal;
@@ -21,5 +22,4 @@ int main(){
     
     getchar();
     return 0;
-
 }

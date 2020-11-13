@@ -12,20 +12,19 @@ int main()
 
     printf("Números em ordem decresente \n \n");
     printf("Digite três números em ordem crescente. \n");
-
     printf("Digite um número: ");
-        scanf("%d",&n1); // Menor numero
+    scanf("%d",&n1); // Menor numero
     printf("Digite um n�mero: ");
-        scanf("%d",&n2);
+    scanf("%d",&n2);
     printf("Digite um número: ");
-        scanf("%d",&n3); //Maior numero
+    scanf("%d",&n3); //Maior numero
 
     printf(" \n");
     printf("Digite um número fora da ordem: ");
-        scanf("%d",&n4);
+    scanf("%d",&n4);
     printf("\n\n");
 
-    //Condi�oes
+    //Condições
     if ( n4 > n3){
         printf("A ordem decresente dos números é: %d,%d,%d,%d. \n",n4,n3,n2,n1);
     }

@@ -3,6 +3,7 @@
 do dólar e também a quantidade de dólares disponíveis com o usuário.*/
 
 #include <stdio.h>
+
 int main(){
     float real, dolares, cot;
     printf("Digite quantos dolares: \n");
@@ -16,5 +17,4 @@ int main(){
     
     getchar();
     return 0;
-
 }

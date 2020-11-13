@@ -5,16 +5,15 @@ percentual informado pelo usuário.*/
 #include <stdio.h>
 int main(){
     float precoCusto, precoVenda, acrescimo;
-    printf("Preco do custo: \n");
+    printf("Preco do custo: R$");
     scanf("%f", &precoCusto);
-    printf("Digite o valor do acrescimo: \n");
+    printf("Digite o valor do acrescimo: R$");
     scanf("%f", &acrescimo);
 
     precoVenda = precoCusto + acrescimo;
 
-    printf("Preco de venda: %.2f \n", precoVenda);
+    printf("Preco de venda: R$%.2f \n", precoVenda);
     
     getchar();
     return 0;
-    
 }

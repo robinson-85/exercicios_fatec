@@ -2,6 +2,7 @@
 multiplicação e a divisão dos números lidos.*/
 
 #include <stdio.h>
+
 int main(){
     float n1, n2, soma, sub, mult, div, resultado;
     printf("Digite um numero: \n");
@@ -15,5 +16,4 @@ int main(){
     
     getchar();
     return 0;
-
 }

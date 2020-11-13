@@ -37,6 +37,7 @@ int main()
     } else if(angulo > 270 && angulo < 360 || angulo < 0 && angulo > -90){
         printf("Quarto Quadrante\n");
     }
+    
     printf("Foram dadas %d voltas no sentido \n",voltas);
 
     if(angulo < 0){

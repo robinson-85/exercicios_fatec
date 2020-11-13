@@ -8,7 +8,7 @@ Acima de R$ 1.200,00              Sem bonificação */
 #include <stdio.h>
 int main(){
     float sal_inicial , sal_novo, bonificacao = 0, auxilio_escola;
-    printf("\nDigite o seu salario: \n");
+    printf("\nDigite o seu salario: R$");
     scanf("%f", &sal_inicial);
 
     if (sal_inicial <= 500){
@@ -35,7 +35,7 @@ int main(){
 
     sal_novo = sal_inicial + bonificacao + auxilio_escola;
     
-    printf("O seu salario total e: %.2f \n", sal_novo);
+    printf("O seu salario total e: R$%.2f \n", sal_novo);
 
     getchar();
     return 0;

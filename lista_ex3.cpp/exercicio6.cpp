@@ -3,6 +3,7 @@ de forma que a variável A passe a possuir o valor da variável B e a variável 
 passe a possuir o valor da variável A. Apresentar os valores trocados.*/
 
 #include <stdio.h>
+
 int main(){
     int a, b, troca;
     printf("Informe o valor da variavel A: \n");
@@ -19,5 +20,4 @@ int main(){
 
     getchar();
     return 0;
-
 }
