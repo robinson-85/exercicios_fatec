@@ -7,20 +7,19 @@ de aumento, calcule e mostre o valor do aumento e o novo salário.*/
 int main(){ 
     setlocale( LC_ALL, "Portuguese");
     float sal, perc, aumento, novosal;
-    printf("\nDigite o salário do funcionário: \n");
+    printf("\nDigite o salário do funcionário: R$\n");
     scanf("%f%*c",&sal);
-    printf("\nDigite o percentual de aumento: \n");
+    printf("\nDigite o percentual de aumento: R$\n");
     scanf("%f%*c",&perc);
     
     aumento = sal * perc/100;
 
-    printf("\nAumento = %4.2f \n", aumento);
+    printf("\nAumento = R$ %4.2f \n", aumento);
 
     novosal = sal + aumento;
 
-    printf("\nNovo salário = %4.2f \n", novosal);
+    printf("\nNovo salário = R$ %4.2f \n", novosal);
 
     getchar();
     return 0;
-
 }
