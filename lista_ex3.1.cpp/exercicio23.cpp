@@ -45,14 +45,13 @@ Maior que R$ 600,00               Bem remunerado     */
 
 int main(){
     char turno_trabalho, categoria, M, V, N, O, G;
-    float sal_minimo, horas_trabalhadas, coeficiente_sal, sal_bruto, imposto, gratificacao, auxilio_alimentacao, sal_liquido;
+    float sal_minimo, horas_trabalhadas, valor_aumento, novo_salario, sal_bruto, imposto, gratificacao, auxilio_alimentacao, sal_liquido;
     printf("Digite o valor do salario minimo: \n");
     scanf("%f", &sal_minimo);
     printf("Declare seu turno de trabalho: \nM — matutino, \nV — vespertino, \nN — noturno \n");
     scanf("%s", &turno_trabalho);
     printf("Declare a sua categoria: O — operario ou G — gerente \n");
     scanf("%s", &categoria);
-   
     printf("Declare o numero de horas trabalhadas durante o mes: \n");
     scanf("%f", &horas_trabalhadas);
     printf("\n \n");
@@ -60,19 +59,28 @@ int main(){
     // coeficiente do salário e sobre o turno.
    
     if(turno_trabalho == M){
-	    coeficiente_sal = sal_minimo * 0.10;
+	    valor_aumento = sal_minimo * 0.10;
+        novo_salario = sal_minimo * 1.10;
+        printf("\nValor do Aumento em 10 Porcento: R$%.2f \n", valor_aumento);
+        printf("\nValor do Novo Salario: R$%.2f \n", novo_salario);
+
     }
     else if(turno_trabalho == V){
-	    coeficiente_sal = sal_minimo * 0.15;
+        valor_aumento = sal_minimo * 0.15;
+        novo_salario = sal_minimo * 1.15;
+        printf("\nValor do Aumento em 15 Porcento: R$%.2f \n", valor_aumento);
+        printf("\nValor do Novo Salario: R$%.2f \n", novo_salario);
+
     }
     else if(turno_trabalho == N){
-	    coeficiente_sal = sal_minimo + (12/100);
+        valor_aumento = sal_minimo * 0.12;
+        novo_salario = sal_minimo * 1.12;
+        printf("\nValor do Aumento em 12 Porcento: R$%.2f \n", valor_aumento);
+        printf("\nValor do Novo Salario: R$%.2f \n", novo_salario);
+
     }
-
-    printf("O coeficiente do salário é: R$ %.2f \n", coeficiente_sal);
-
-    sal_bruto = horas_trabalhadas * coeficiente_sal;
-
+    
+    sal_bruto = horas_trabalhadas * novo_salario;
     printf("O valor do salario bruto e: R$ %.2f\n", sal_bruto);
 
     // imposto sobre o salário e a categoria.
@@ -104,7 +112,7 @@ int main(){
 
     // auxílio-alimentação
     
-    if(categoria == O && coeficiente_sal<=25){
+    if(categoria == O && novo_salario <=25){
         auxilio_alimentacao =  sal_bruto/3;
     }
     else{
@@ -136,7 +144,3 @@ int main(){
 }
 
 
-/*ValorAumento= Salario*0.12; //VALOR DO AUMENTO
-    NovoSalario= Salario*1.12;  //VALOR NOVO SALARIO
-    printf("\nValor do Aumento em 12 Porcento: \n%f",ValorAumento);
-    printf("\nValor do Novo Salario: \n%.3f",NovoSalario);*/
