@@ -35,8 +35,6 @@ int main(){
         printf("Sua média é %.2f,portanto está aprovado \n",media);
     }
 
-
     getchar ();
     return 0;
-
 }
