@@ -5,8 +5,7 @@ em ordem decrescente. Suponha que o usuário digitará quatro números diferente
 #include <stdio.h>
 #include <locale.h> 
 
-int main()
-{
+int main(){
     setlocale(LC_ALL,"portuguese"); 
     int num1, num2, num3, num4;
     printf("Digite o primeiro número em ordem crescente: \n");

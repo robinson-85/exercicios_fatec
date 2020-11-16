@@ -3,6 +3,7 @@ sem juros. Faça um algoritmo que receba um valor de uma compra e mostre o valor
 prestações.*/
 
 #include <stdio.h>
+
 int main(){
     float valorProduto, prestacao, valorPrestacao = 5;
     printf("Valor do produto: R$");

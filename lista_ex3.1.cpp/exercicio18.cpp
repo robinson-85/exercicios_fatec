@@ -9,6 +9,7 @@ lados;
 ■ recebe o nome de escaleno o triângulo que tem os três lados diferentes. */
 
 #include <stdio.h>
+
 int main(){
     float x, y, z;
     printf("\nInforme o valor de x: \n");

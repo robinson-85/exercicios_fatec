@@ -2,6 +2,7 @@
 Considera que pagam imposto pessoas cujo salário é maior que R$ 1.200,00. */
 
 #include<stdio.h>
+
 int main(){
     float imposto, sal;
     printf("\nDigite o salario: R$");

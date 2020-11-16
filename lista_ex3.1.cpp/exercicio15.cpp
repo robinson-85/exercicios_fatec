@@ -3,9 +3,7 @@ gratificação.
 
 Salario líquido                             Gratificação
 Até R$ 350,00                               R$ 100,00
-Superior a R$ 350,00                        R$ 50,00  
-
-*/
+Superior a R$ 350,00                        R$ 50,00                            */
 
 #include <stdio.h>
 #include <locale>

@@ -19,6 +19,7 @@ comprado e depende do país de origem;
 ■ o valor total, preço total do produto mais imposto.*/
 
 #include <stdio.h>
+
 int main(){
     int cod_produto,cod_pais;
     float peso,gramas,preco,imposto;

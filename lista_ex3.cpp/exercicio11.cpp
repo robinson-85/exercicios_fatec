@@ -3,6 +3,7 @@ de venda. Sabe-se que o preço de custo receberá um acréscimo de acordo com um
 percentual informado pelo usuário.*/
 
 #include <stdio.h>
+
 int main(){
     float precoCusto, precoVenda, acrescimo;
     printf("Preco do custo: R$");

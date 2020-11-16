@@ -42,7 +42,6 @@ Maior que R$ 600,00               Bem remunerado     */
 
 #include <stdio.h>
  
-
 int main(){
     char turno_trabalho, categoria, M, V, N, O, G;
     float sal_minimo, horas_trabalhadas, coeficiente_salario, valor_aumento, novo_salario, sal_bruto, imposto, gratificacao, auxilio_alimentacao, sal_liquido;

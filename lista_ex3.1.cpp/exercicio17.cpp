@@ -9,12 +9,10 @@ x = (-b) / (2 * a)
 x1 = (-b + raiz(delta))/ (2 * a)
 x2 = (-b - raiz(delta))/ (2 * a)*/
 
- 
-
 #include<stdio.h>
 #include<math.h>
-int main ()
-{
+
+int main (){
     float a,b,c,delta,x,x1,x2;
     printf("Digite valor para a \t");
     scanf("%f%*c",& a);
@@ -22,6 +20,7 @@ int main ()
     scanf("%f%*c",& b);
     printf("Digite valor para c \t");
     scanf("%f%*c",& c);
+    
     if(a==0){
         printf("Não é equacao de 2 grau");
     }

@@ -4,6 +4,7 @@ Considere que o aluno cursa apenas três matérias, e que a nota de cada uma est
 armazenada nas seguintes variáveis: materia1, materia2 e materia3. */
 
 #include <stdio.h>
+
 int main(){
     float materia1, materia2, materia3, resultado;
     

@@ -2,6 +2,7 @@
 fornecida a distância total percorrida pelo automóvel e o total de combustível gasto.*/
 
 #include <stdio.h>
+
 int main(){
     float consumo_medio, distancia_total, total_combustivel_gasto;
     printf("Digite a distancia percorrida pelo automovel(em km): \t");

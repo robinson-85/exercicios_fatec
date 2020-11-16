@@ -6,8 +6,7 @@ de voltas e o sentido da volta (horário ou anti-horário).*/
 #include <stdio.h>
 #include <math.h>
 
-int main()
-{
+int main(){
     float angulo;
     int voltas,resto;
 
@@ -27,14 +26,14 @@ int main()
 
     if(angulo > 0 && angulo < 90 || angulo < -270 && angulo > -360){
         printf("Primeiro Quadrante\n");
-
-    } else if(angulo > 90 && angulo < 180 || angulo < -180 && angulo > -270){
+    } 
+    else if(angulo > 90 && angulo < 180 || angulo < -180 && angulo > -270){
         printf("Segundo Quadrante\n");
-
-    } else if(angulo > 180 && angulo < 270 || angulo < -90 && angulo > -180){
+    } 
+    else if(angulo > 180 && angulo < 270 || angulo < -90 && angulo > -180){
         printf("Terceiro Quadrante\n");
-
-    } else if(angulo > 270 && angulo < 360 || angulo < 0 && angulo > -90){
+    } 
+    else if(angulo > 270 && angulo < 360 || angulo < 0 && angulo > -90){
         printf("Quarto Quadrante\n");
     }
     
@@ -42,11 +41,11 @@ int main()
 
     if(angulo < 0){
         printf("horário \n");
-
-    } else if(angulo > 0){
+    }
+    else if(angulo > 0){
         printf("anti-horário \n");
-
-    } else {
+    } 
+    else {
         printf("Não foram dadas voltas \n");
     }
 
