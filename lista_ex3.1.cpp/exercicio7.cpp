@@ -12,12 +12,10 @@ Valor de I                 Forma de escrever
 #include <stdio.h>
 #include <locale.h> 
 
-int main()
-{
+int main(){
     setlocale(LC_ALL,"portuguese"); 
     int I;
     float A,B,C;
-
     printf("Digite um número entre 1, 2 e 3: \n");
     scanf("%d",&I);
 
@@ -31,41 +29,34 @@ int main()
     scanf("%f",&C);
     printf("\n\n");
 
-    if (I == 1)
-    {
-        if ((A < B) && (B < C));
+    if (I == 1){
+        if(A < B && B < C);
         printf("A ordem crescente dos n�meros digitados �:%.0f,%.0f,%.0f \n\n",A,B,C);
     }
 
-    else if (I == 2 )
-    {
-        if ((A < B) && (B < C));
+    else if (I == 2 ){
+        if(A < B && B < C);
         printf("A ordem decrescente dos números digitados é:%.0f,%.0f,%.0f \n\n",C,B,A);
     }
 
-    else if (I == 3)
-    {
-        if((A > B && A > C))
-        {
+    else if (I == 3){
+        if(A > B && A > C){
             printf("O número maior está no meio: \n");
             printf("%.0f - %.0f - %.0f \n\n",B,A,C);
         }
 
-        if((B > A && B > C))
-        {
+        if(B > A && B > C){
             printf("O número maior está no meio: \n");
             printf("%.0f - %.0f - %.0f \n\n",A,B,C);
         }
 
-        if ((C > B && C > A))
-        {
+        if(C > B && C > A){
             printf("O número maior está no meio: \n");
             printf("%.0f - %.0f - %.0f \n\n",A,C,B);
         }
     }
 
-    else
-    {
+    else{
         printf("O programa não pode ser executado! \n\n");
     }
 

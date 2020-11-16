@@ -54,10 +54,10 @@ int main(){
 	    printf("Dezembro\n");
     }
 
-    inteira_hs = (int)horas;
+    horas = (int)horas;
     minutos = (horas - inteira_hs)*100;
 
-    printf("O horário informado é %.2d:%.0f.\n", inteira_hs, minutos);
+    printf("O horário informado é %.2d:%.2f.\n", inteira_hs, minutos);
 
     getchar();
     return 0;

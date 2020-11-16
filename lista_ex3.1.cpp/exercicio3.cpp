@@ -1,6 +1,7 @@
 // 3. Faça um programa que receba dois números e mostre o maior.
 
 #include <stdio.h>
+
 int main(){
     int n1, n2;
     printf("Descubra qual numero e maior! \n \n");
