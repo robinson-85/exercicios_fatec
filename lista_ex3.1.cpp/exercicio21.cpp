@@ -20,3 +20,54 @@ Calcule e mostre:
 caminhão e depende do estado de origem;
 ■ o valor total transportado pelo caminhão, preço da carga mais imposto. */
 
+#include <stdio.h>
+
+int main(){
+        float peso_tonelada, codigo_estado, codigo_carga, valor_total, imposto, peso_em_quilo, preco_carga, preco_quilo;
+        printf("Digite o código do estado de origem (1 a 5): \n");
+        scanf("%f", &codigo_estado);
+        printf("Digite o peso da carga em toneladas: \n");
+        scanf("%f", &peso_tonelada);
+        printf("Digite o código da carga de origem (10 a 40): \n");
+        scanf("%f", &codigo_carga);
+        
+        peso_em_quilo= peso_tonelada * 1000;
+        printf("O peso em Kg da carga do caminhão são: %.2f Kg \n", peso_em_quilo);
+
+        if(codigo_carga>=10 && codigo_carga<=20){
+                preco_carga = peso_em_quilo * 100;
+        }
+        else if(codigo_carga>=21 && codigo_carga<=30){
+                preco_carga = peso_em_quilo * 250;
+        }
+        else if(codigo_carga>=31 && codigo_carga<=40){
+                preco_carga = peso_em_quilo * 340;
+        }
+
+        printf("O preço da carga do caminhão é: R$ %.2f \n", preco_carga);
+
+        if(codigo_estado == '1'){
+                imposto = preco_carga * 0.35;
+        }
+        else if(codigo_estado == '2'){
+                imposto = preco_carga * 0.25;
+        }
+        else if(codigo_estado == '3'){
+                imposto = preco_carga * 0.15;
+        }
+        else if(codigo_estado == '4'){
+                imposto = preco_carga * 0.5;
+        }
+        else if(codigo_estado == '5'){
+                printf("Isento \n");
+        }
+
+        printf("O valor do imposto é: R$ %.2f \n", imposto);
+
+        valor_total = preco_carga + imposto;
+
+        printf("O valor total da carga do caminhão é: R$%.2f \n", valor_total);
+
+        getchar();
+        return 0;
+}

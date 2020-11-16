@@ -10,6 +10,7 @@ Média Ponderada                                Conceito
 */
 
 #include <stdio.h>
+
 int main(){
     float n1, n2, n3, media, exame;
     printf("\nDigite a nota do aluno: \n");
@@ -29,7 +30,7 @@ int main(){
     else if((media >=3) && (media < 7)) {
         exame = 6 - media;
         printf("Sua média é %.2f,portanto está em exame \n",media);
-        printf("Falta %.2f pontos para você ser aprovado. \n\n",exame);
+        printf("Faltam %.2f pontos para você ser aprovado. \n\n",exame);
     }
     else if ((media >= 7) && (media <= 10)) {
         printf("Sua média é %.2f,portanto está aprovado \n",media);
