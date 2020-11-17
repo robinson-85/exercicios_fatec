@@ -38,9 +38,7 @@ int main(){
         printf("Voce esta Aprovado! \n");
         aprovado = aprovado + 1;
     }
-
-    media_classe = media_classe + media_aritmetica;
-
+        media_classe = media_classe + media_aritmetica;
     }
 
     media_classe = media_classe/6;
@@ -48,6 +46,5 @@ int main(){
 
     getchar();
     return 0;
-
 }
 

@@ -5,6 +5,7 @@
 
 int main(){
     int valor = 0, valor_anterior = 1, soma;
+    
     for(int i = 0; i < 8; i++){
         printf("Soma \n");
         soma = valor + valor_anterior;
@@ -12,6 +13,7 @@ int main(){
         valor = soma;
         printf("%.d\n", soma);
     }
+    
     getchar();
     return 0;
 }

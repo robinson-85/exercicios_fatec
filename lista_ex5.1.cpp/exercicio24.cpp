@@ -87,7 +87,6 @@ int main(){
         } 
     }
 
-
     if(resposta == 4){
         printf("Programa encerrado! \n");
     }

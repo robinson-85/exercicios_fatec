@@ -10,17 +10,15 @@ int main(){
     
     guarda_maior = numero;
  
-
     for(i=1; i<15; i++){
-    printf("\nEntre com o %d o numero inteiro: \n",i+1);
-    scanf("%i", &numero);
+        printf("\nEntre com o %d o numero inteiro: \n",i+1);
+        scanf("%i", &numero);
 
     if(numero > guarda_maior)
         guarda_maior = numero;
     }
 
     printf("\nO maior numero e: %d \n", guarda_maior); 
-
 
     getchar();
     return 0;
