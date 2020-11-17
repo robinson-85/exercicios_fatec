@@ -33,6 +33,7 @@ Até R$700,00 R$                             Mal remunerado
 Maiores que R$700,00 R$                     Bem remunerado             */
 
 #include <stdio.h>
+
 int main(){
     float salario, valor_imposto, resposta, novo_salario;
     printf("Digite as opções: \n 1. Imposto \n 2. Novo salário \n 3. Classificação \n 4. Finalizar o programa \n");
@@ -73,7 +74,6 @@ int main(){
 
         printf("O valor do seu novo salario sera: %.2f \n", novo_salario);
     }
-
 
     if(resposta == 3){
         printf("Digite o seu salario: \n");

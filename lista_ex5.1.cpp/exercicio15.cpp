@@ -110,7 +110,6 @@ int main(){
             preco_menor = preco_unitario;
         }
         
-
         preco_final = preco_unitario + custo_estocagem + imposto;
         printf("O preco final do produto sera: %.2f \n", preco_final);
         
@@ -120,12 +119,8 @@ int main(){
         }
         
         printf("O preço maior sera: %f\n", preco_maior);
-
         printf("O preço menor sera: %f\n", preco_menor);
-
-
         printf("A media total dos impostos sera: %.2f \n", total_imposto/12);
-
         printf("A media do custo de estocagem sera: %.2f \n", media_custo_estocagem/12);
 
     getchar();

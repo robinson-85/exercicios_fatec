@@ -2,6 +2,7 @@
 número que foi digitado pelo usuário. */
 
 #include <stdio.h>
+
 int main(){
     int numero_inteiro, numero, guarda_maior, i;
     printf("Entre com o primeiro numero inteiro: ");
