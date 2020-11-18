@@ -2,8 +2,7 @@
 V — vestuário) e a refrigeração (S — produto que necessita de refrigeração; e N —
 produto que não necessita de refrigeração) de um produto. Suponha que haverá
 apenas a digitação de dados válidos e, quando houver digitação de letras, utilize
-maiúsculas. Calcule e mostre:
-■ O valor adicional, de acordo com a tabela a seguir:
+maiúsculas. Calcule e mostre: ■ O valor adicional, de acordo com a tabela a seguir:
 
 Refrigeração       Tipo            Preço              Valor adicional
 N                   A            <R$ 15,00             R$ 2,00 
@@ -20,13 +19,11 @@ S                   A                                 R$ 8,00
 S                   L                                 R$ 0,00  
 S                   V                                 R$ 0,00  
 
-
 O valor do imposto, de acordo com a regra a seguir.
 
     Preço                Percentual sobre o preço
 < R$ 25,00 R$                       5%
 > = R$ 25,00                        8%
-
 
 ■ O preço de custo, ou seja, preço mais imposto.
 ■ O desconto, de acordo com a regra a seguir.
@@ -113,7 +110,6 @@ int main(){
 	else{
         printf("\nCaro \n");
     }
-
     getchar();
     return 0;
 }

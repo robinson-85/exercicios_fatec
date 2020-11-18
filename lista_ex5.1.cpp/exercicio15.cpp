@@ -39,8 +39,8 @@ impostos dos doze produtos.
 ■ A quantidade de produtos com classificação caro.
 ■ A quantidade de produtos com classificação normal.*/
 
-
 #include <stdio.h>
+
 int main(){
     float preco_unitario, custo_estocagem, imposto, preco_maior = 0,  preco_menor = 10000, preco_final, media_custo_estocagem, total_imposto = 0, valores_adicionais;
     char refrigeracao, categoria;
@@ -84,7 +84,7 @@ int main(){
             custo_estocagem = 1;
         }
 
-        printf("O custo de estocagem sera: %.2f \n", custo_estocagem);
+        printf("O custo de estocagem sera: %f \n", custo_estocagem);
 
         if(categoria == 'A' && refrigeracao == 'S'){
             imposto = preco_unitario / 100 * 4;
