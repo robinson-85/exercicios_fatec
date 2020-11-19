@@ -2,6 +2,7 @@
 Sabe-se que: Área = (base * altura)/2.*/
 
 #include <stdio.h>
+
 int main (){
     float area, base, altura;
     printf("Digite o valor da base: \n");

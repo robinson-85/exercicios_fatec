@@ -2,7 +2,8 @@
 V — vestuário) e a refrigeração (S — produto que necessita de refrigeração; e N —
 produto que não necessita de refrigeração) de um produto. Suponha que haverá
 apenas a digitação de dados válidos e, quando houver digitação de letras, utilize
-maiúsculas. Calcule e mostre: ■ O valor adicional, de acordo com a tabela a seguir:
+maiúsculas. Calcule e mostre: 
+■ O valor adicional, de acordo com a tabela a seguir:
 
 Refrigeração       Tipo            Preço              Valor adicional
 N                   A            <R$ 15,00             R$ 2,00 
