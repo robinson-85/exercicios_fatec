@@ -16,7 +16,7 @@ Calcule e mostre:
 ■ o preço total do produto comprado;
 ■ o valor do imposto, sabendo que ele é cobrado sobre o preço total do produto
 comprado e depende do país de origem;
-■ o valor total, preço total do produto mais imposto.*/
+■ o valor total, preço total do produto mais imposto.                    */
 
 #include <stdio.h>
 #include <locale.h> //Biblioteca locale é utilizada para definar o idioma do programa.
