@@ -5,7 +5,7 @@ em uma terceira matriz 3x4.*/
 
 int main(){
     int soma = 0;
-    int mat1[3][4], mat2[3][4], soma[3][4];
+    int mat1[3][4], mat2[3][4], mat3[3][4];
     int i1, j1, i2, j2, somai, somaj;
 
         for(i1=0; i1<3; i1++){
@@ -28,11 +28,10 @@ int main(){
         for(somai=0; somai<3; somai++){
             for(somaj=0; somaj<3; somaj++){
                 printf("O valor da terceira matriz e: \n");
-                scanf("%d", &soma[3][4]);
+                scanf("%d", &mat3[3][4]);
 
             }
         }
-
 
     getchar();
     return 0;
