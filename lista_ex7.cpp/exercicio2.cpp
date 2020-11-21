@@ -5,6 +5,15 @@ pares, a quantidade de números ímpares, a soma dos números pares, a soma dos 
 #include <stdio.h>
 
 int main(){
+    int num_par, num_impar, soma_par, soma_impar, media_par, media_impar;
+    int mat[4][5];
+    int i, j;
+
+        for(i=0; i<4; i++){
+            for(j=0; j<5; j++){
+            }
+        }
+
 
 
 
