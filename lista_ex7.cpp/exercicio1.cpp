@@ -10,13 +10,15 @@ int main(){
 
     for(i=0;i<3;i++){
         for(j=0;j<5;j++){
-            printf("Digite valor %d da linha e valor %d da coluna \n");
+            printf("Digite valor da linha %d e valor da coluna %d\n", i, j);
             scanf("%d%*c", &mat[i][j]);
                  soma = soma + mat[i][j];
             
         }
     }
-   
+    
+    printf("A soma ficou: %d \n", soma);
+    
     getchar();
     return 0;
 }
