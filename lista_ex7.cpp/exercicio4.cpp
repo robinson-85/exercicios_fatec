@@ -9,14 +9,14 @@ int main(){
 
         for(i=0; i<3; i++){
             for(j=0; j<3; j++){
-                printf("O valor da coluna e %d e o valor da linha e %d \n");
+                printf("O valor da coluna e %d e o valor da linha e %d \n", i, j);
                 scanf("%d", &mat[i][j]);
 
                 media = mat[i][j] + mat[i][j] / 2;
-
-                printf("A media das matrizes 3x3 é: %d \n", media);
             }
         }
+
+    printf("A media das matrizes 3x3 é: %d \n", media);
 
     getchar();
     return 0;
