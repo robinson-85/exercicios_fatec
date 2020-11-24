@@ -10,14 +10,14 @@ int main(){
 
         for(i1=0; i1<3; i1++){
             for(j1=0; j1<4; j1++){
-                printf("O valor linha da matriz 1 e %d e o valor da coluna da matriz 1 e %d");
+                printf("O valor linha da matriz 1 e %d e o valor da coluna da matriz 1 e %d \n", i1, j1);
                 scanf("%d", &mat1[3][4]);
             }
         }
 
         for(i2=0; i2<3; i2++){
             for(j2=0; j2<4; j2++){
-                printf("O valor linha da matriz 2 e %d e o valor da coluna da matriz 2 e %d");
+                printf("O valor linha da matriz 2 e %d e o valor da coluna da matriz 2 e %d \n", i2, j2);
                 scanf("%d", &mat2[3][4]);
             }
         }
@@ -27,7 +27,7 @@ int main(){
 
         for(somai=0; somai<3; somai++){
             for(somaj=0; somaj<3; somaj++){
-                printf("O valor da terceira matriz e: \n");
+                printf("O valor linha da matriz 3 e %d e o valor da coluna da matriz 3 e %d \n \n", somai, somaj);
                 scanf("%d", &mat3[3][4]);
 
             }
