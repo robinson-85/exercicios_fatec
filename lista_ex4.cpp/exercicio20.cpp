@@ -22,6 +22,7 @@ comprado e depende do país de origem;
 //Refazer esse exercício.
 
 #include <stdio.h>
+
 int main(){
     float codigoProduto, pesoProduto, codigoOrigem, precoTotal, valorImposto = 0, valorTotal;
     printf("\nDigite o codigo do produto: \n");
@@ -30,7 +31,6 @@ int main(){
     scanf("%f", &pesoProduto);
     printf("\nDigite o codigo do pais: \n");
     scanf("%f", &codigoOrigem);
-
 
     if(codigoProduto >=1  && codigoProduto <=10){
         if(codigoOrigem >=1 && codigoOrigem <= 3){
@@ -64,5 +64,4 @@ int main(){
 
     getchar();
     return 0;
-
 }

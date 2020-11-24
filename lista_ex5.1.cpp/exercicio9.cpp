@@ -13,6 +13,7 @@ De 7 para cima                           Aprovado
 ■ a média da classe. */
 
 #include <stdio.h>
+
 int main(){
     float n1, n2, media_aritmetica, media_aritmetica_geral, mensagem, aprovado = 0, reprovado = 0,  exame = 0, media_classe = 0;
     

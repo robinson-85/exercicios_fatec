@@ -28,6 +28,7 @@ O salário a receber do funcionário é igual ao salário líquido mais a gratif
 
 
 #include <stdio.h>
+
 int main(){
     float sal_min, sal_mes, sal_bruto, sal_liquido, horas_trab, dependente,valor_dependente, horas_extra, valor_hora_trab;
     printf("\nDigite o valor do salario minimo: \n");
@@ -67,7 +68,6 @@ int main(){
 
     getchar();
     return 0;
-
 }
 
 

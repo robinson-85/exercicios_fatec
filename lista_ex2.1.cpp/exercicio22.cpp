@@ -28,6 +28,7 @@ Entre R$ 350,00 e R$ 600,00                 B
 De R$ 600,00 para cima                      C                                        */
 
 #include <stdio.h>
+
 int main(){
     float sal_base, tempo_de_servico, novo_sal, imposto, sal_liquido, gratificacao;
     printf("\nDigite o seu salario: \n");

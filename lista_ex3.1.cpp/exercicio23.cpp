@@ -114,7 +114,7 @@ int main(){
 
     sal_liquido = sal_bruto - imposto + gratificacao + auxilio_alimentacao; 
     
-    printf("O valor do seu salario liquido e:R$ %.2f \n", sal_liquido);
+    printf("O valor do seu salario liquido e: R$ %.2f \n", sal_liquido);
 
     // Finalização.
 

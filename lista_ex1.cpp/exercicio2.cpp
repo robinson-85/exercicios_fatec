@@ -9,7 +9,6 @@ int main(){
         scanf("%d",&n2);
         scanf("%d",&n3);
 
-
         resultado = (n1 + n2 + n3) / 3; // processing
         
         printf("Sua nota final e: %d", resultado); // output

@@ -10,7 +10,7 @@ int main(){
     printf("Coloque o valor do salario: \n");
     scanf("%f",&salario);
 
-    cpmf = (salario * 0.38/100) * 2;
+    cpmf = (salario * 0.0038) * 2;
     saldoAtual = salario - cpmf; 
 
     printf("\nSeu saldo atual e: %.2f \n", saldoAtual);

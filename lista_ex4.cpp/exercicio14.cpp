@@ -6,6 +6,7 @@ entre R$ 500,00 e R$ 1.200,00     12% do salário        Acima de R$ 600   R$ 10
 Acima de R$ 1.200,00              Sem bonificação */
 
 #include <stdio.h>
+
 int main(){
     float sal_inicial , sal_novo, bonificacao = 0, auxilio_escola;
     printf("\nDigite o seu salario: R$");
@@ -39,5 +40,4 @@ int main(){
 
     getchar();
     return 0;
-
 }
