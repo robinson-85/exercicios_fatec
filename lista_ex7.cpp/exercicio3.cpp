@@ -23,6 +23,7 @@ int main(){
         }
 
         soma = mat1[3][4] + mat2[3][4];
+        
         printf("A soma das duas matrizes é: %d\n", soma);
 
         for(somai=0; somai<3; somai++){

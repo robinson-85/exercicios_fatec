@@ -12,7 +12,6 @@ int main(){
             for(j = 0; j < 5; j++){
                 printf("Digite valor %d da linha e valor %d da coluna \n", i, j);
                 scanf("%d%*c", &mat[i][j]);
-                
             }
         }
     
