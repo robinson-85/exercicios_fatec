@@ -72,4 +72,7 @@ int main(){
         printf("Comando inválido");
     }
 
+    getchar ();
+    return 0;
+
 }

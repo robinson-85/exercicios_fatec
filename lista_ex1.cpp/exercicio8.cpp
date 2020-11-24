@@ -3,6 +3,7 @@ de juros, calcule e mostre o valor do rendimento e o valor total depois
 do rendimento.*/
 
 #include <stdio.h>
+
 int main (){
     float valor_deposito, valor_juros, valor_rendimento, resultado;
     printf("Escreva o valor do depósito: R$ \n");
@@ -18,5 +19,4 @@ int main (){
     
     getchar();
     return 0;
-
 }

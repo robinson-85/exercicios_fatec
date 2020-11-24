@@ -3,6 +3,7 @@ e mostre seu salário a receber, sabendo-se que o funcionário tem gratificaçã
 de R$ 50 e paga imposto de 10% sobre o salário base. */
 
 #include <stdio.h>
+
 int main (){
     float sal_base, sal_receber, gratificacao = 50, imposto = 0.10, resultado; 
     printf("Digite o seu salario: R$ \n");

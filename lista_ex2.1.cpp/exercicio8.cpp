@@ -7,6 +7,7 @@ Digite a opção desejada: */
 
 #include <stdio.h>
 #include<math.h>
+
 int main(){
     float n1, n2, n, soma, raiz_quadrada, resposta;
     printf("Digite a opcao desejada: \n1. Somar dois numeros \n2. Raiz quadrada de um numero \n");

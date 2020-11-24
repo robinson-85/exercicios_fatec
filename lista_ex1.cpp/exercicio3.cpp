@@ -4,7 +4,6 @@ e mostre a média ponderada.*/
 #include <stdio.h>
 
 int main(){
-    
     int n1, p1, n2, p2, n3, p3, somar, resultado;
         printf("Coloque todas as notas primeiro, e depois coloque os pesos \n");
         scanf("%d", &n1);// input
