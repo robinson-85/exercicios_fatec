@@ -31,7 +31,7 @@ int main(){
         printf("Voce esta Reprovado! \n");
         reprovado = reprovado + 1;
     }
-    else if(media_aritmetica >= 3 && media_aritmetica >= 7){
+    else if(media_aritmetica >= 3 && media_aritmetica <= 7){
         printf("Voce esta de Exame! \n");
         exame = exame + 1;
     }

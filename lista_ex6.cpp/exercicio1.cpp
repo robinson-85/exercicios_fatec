@@ -11,7 +11,7 @@ int main(){
     }
 
     for(int i = 0; i < 10; i+=7){
-        printf("%d -", vetor[i]);
+        printf("%d - \n", vetor[i]);
 
     }
 
