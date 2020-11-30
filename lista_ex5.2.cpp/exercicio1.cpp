@@ -13,7 +13,7 @@ Digite um número: 4.
 
 int main(){
     int n = 0, i = 0;
-    printf("\nPor favor, informe a tabuada que você deseja: \n");
+    printf("\nInforme a tabuada que você deseja: \n");
     scanf("%d",&n);
  
     for(int i = 0; i<=10; i++){

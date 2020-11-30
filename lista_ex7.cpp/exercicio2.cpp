@@ -7,21 +7,15 @@ dos números ímpares, a média dos números pares e a média dos números ímpa
 int main(){
     int num_par, num_impar, soma_par, soma_impar, media_par, media_impar;
     int mat[4][5];
-    int i, j;
 
-        for(i=0; i<4; i++){
-            for(j=0; j<5; j++){
-                printf("Digite valor da linha %d e valor da coluna %d\n", i, j);
-                scanf("%d%*c", &mat[i][j]);
-            }
+    for(int i=0; i<4; i++){
+        for(int j=0; j<5; j++){
+            printf("Digite valor da linha %d e valor da coluna %d\n", i, j);
+            scanf("%d%*c", &mat[i][j]);
         }
+    }
 
-        for(i=0; i<4; i+=2){
-            for(j=0; j<5; j+=2){
-                printf("%d%*c - ", num_par);
-            }
-        }
-
+    
 
 
     getchar();

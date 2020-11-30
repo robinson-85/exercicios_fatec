@@ -6,10 +6,10 @@ média dos elementos das linhas pares da matriz. */
 int main(){
     int media_par = 0;
     int mat[5][5];
-    int i, j;
+    
 
-        for(i = 0; i < 5; i++){
-            for(j = 0; j < 5; j++){
+        for(int i = 0; i < 5; i++){
+            for(int j = 0; j < 5; j++){
                 printf("Digite valor %d da linha e valor %d da coluna \n", i, j);
                 scanf("%d%*c", &mat[i][j]);
             }

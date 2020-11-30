@@ -23,9 +23,10 @@ caminhão e depende do estado de origem;
 #include <stdio.h>
 
 int main(){
-        float peso_tonelada, codigo_estado, codigo_carga, valor_total, imposto, peso_em_quilo, preco_carga, preco_quilo;
+        char codigo_estado;
+        float peso_tonelada, codigo_carga, valor_total, imposto, peso_em_quilo, preco_carga, preco_quilo;
         printf("Digite o código do estado de origem (1 a 5): \n");
-        scanf("%f", &codigo_estado);
+        scanf("%c", &codigo_estado);
         printf("Digite o peso da carga em toneladas: \n");
         scanf("%f", &peso_tonelada);
         printf("Digite o código da carga de origem (10 a 40): \n");
@@ -48,6 +49,7 @@ int main(){
 
         if(codigo_estado == '1'){
                 imposto = preco_carga * 0.35;
+                printf("Entrou aqui, o imposto entrou no 1 %.2f", imposto);
         }
         else if(codigo_estado == '2'){
                 imposto = preco_carga * 0.25;
@@ -56,7 +58,7 @@ int main(){
                 imposto = preco_carga * 0.15;
         }
         else if(codigo_estado == '4'){
-                imposto = preco_carga * 0.5;
+                imposto = preco_carga * 0.05;
         }
         else if(codigo_estado == '5'){
                 printf("Isento \n");

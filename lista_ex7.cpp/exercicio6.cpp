@@ -2,7 +2,6 @@
 e imprima a soma das linhas M com as colunas de N.*/
 
 #include <stdio.h>
-
 int main(){
     int soma = 0;
     int M[4][6], N[6][4];
