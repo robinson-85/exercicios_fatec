@@ -5,10 +5,9 @@
 int main(){
     int media;
     int mat[3][3];
-    int i, j;
 
-        for(i=0; i<3; i++){
-            for(j=0; j<3; j++){
+        for(int i=0; i<3; i++){
+            for(int j=0; j<3; j++){
                 printf("O valor da coluna e %d e o valor da linha e %d \n", i, j);
                 scanf("%d", &mat[i][j]);
 

@@ -4,20 +4,19 @@ em uma terceira matriz 3x4.*/
 #include <stdio.h>
 
 int main(){
-    int soma = 0;
+    int soma = 0, somai = 0, somaj = 0;
     int mat1[3][4], mat2[3][4], mat3[3][4];
-    int i1, j1, i2, j2, somai, somaj;
-
-        for(i1=0; i1<3; i1++){
-            for(j1=0; j1<4; j1++){
-                printf("O valor linha da matriz 1 e %d e o valor da coluna da matriz 1 e %d \n", i1, j1);
+    
+        for(int i=0; i<3; i++){
+            for(int j=0; j<4; j++){
+                printf("O valor linha da matriz 1 e %d e o valor da coluna da matriz 1 e %d \n", i, j);
                 scanf("%d", &mat1[3][4]);
             }
         }
 
-        for(i2=0; i2<3; i2++){
-            for(j2=0; j2<4; j2++){
-                printf("O valor linha da matriz 2 e %d e o valor da coluna da matriz 2 e %d \n", i2, j2);
+        for(int i=0; i<3; i++){
+            for(int j=0; j<4; j++){
+                printf("O valor linha da matriz 2 e %d e o valor da coluna da matriz 2 e %d \n", i, j);
                 scanf("%d", &mat2[3][4]);
             }
         }

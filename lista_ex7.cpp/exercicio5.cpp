@@ -6,7 +6,6 @@ média dos elementos das linhas pares da matriz. */
 int main(){
     int media_par = 0;
     int mat[5][5];
-    
 
         for(int i = 0; i < 5; i++){
             for(int j = 0; j < 5; j++){
