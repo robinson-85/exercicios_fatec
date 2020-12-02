@@ -2,7 +2,6 @@
 em uma terceira matriz 3x4.*/
 
 #include <stdio.h>
-
 int main(){
     int soma = 0, somai = 0, somaj = 0;
     int mat1[3][4], mat2[3][4], mat3[3][4];
@@ -27,7 +26,7 @@ int main(){
 
         for(somai=0; somai<3; somai++){
             for(somaj=0; somaj<3; somaj++){
-                printf("O valor linha da matriz 3 e %d e o valor da coluna da matriz 3 e %d \n \n", somai, somaj);
+                printf("O valor da linha matriz 3 e %d e o valor da coluna da matriz 3 e %d \n \n", somai, somaj);
                 scanf("%d", &mat3[3][4]);
 
             }

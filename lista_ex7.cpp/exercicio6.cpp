@@ -3,24 +3,28 @@ e imprima a soma das linhas M com as colunas de N.*/
 
 #include <stdio.h>
 int main(){
-    int soma = 0;
-    int M[4][6], N[6][4];
-    int iM, jM, iN, jN;
+    int m[4][6], n[6][4];
+    int i, j, soma;
 
-    for (iM = 0; iM <4; iM++){
-        for (jM = 0; jM <6; jM++){
-            printf("O valor da coluna e %d e o valor da linha e %d \n", iM, jM);
+    for (i = 0; i <4; i++){
+        for (j = 0; j <6; j++){
+            printf("Digite valor para M: \n");
+            scanf("%d%*c", &m[i][j]);
         }
     }
 
-    for(iN = 0; iN < 6; iN++){
-        for (jN = 0; jN <6; jN++){
-            printf("O valor da coluna e %d e o valor da linha e %d \n", iN, jN);
-
+    for(i = 0; i < 6; i++){
+        for (j = 0; j <6; j++){
+            printf("Digite valor para N: \n");
+            scanf("%d%*c", &n[i][j]);
         }
     }
 
-    soma = iM + jN;
+    for (i = 0; i < 4; i++){
+        for(j = 0; j <6; j++){
+            soma = m[i][j] + n[j][i];
+        }
+    }
 
     printf("A soma da linha M e coluna N é: %d \n", soma);
 
