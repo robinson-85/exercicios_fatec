@@ -3,7 +3,7 @@ preencha o 2o com os valores do primeiro em ordem inversa. */
 
 #include <stdio.h>
 int main(){
-    int vetor1[8] = 
+    int vetor1[8];
 
 
 
